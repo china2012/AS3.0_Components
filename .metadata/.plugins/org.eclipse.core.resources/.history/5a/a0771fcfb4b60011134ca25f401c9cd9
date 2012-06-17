@@ -1,0 +1,12 @@
+package
+{
+	import list_simple.RendererSimple;
+	
+	public class Renderer extends RendererSimple
+	{
+		public function Renderer()
+		{
+			super();
+		}
+	}
+}

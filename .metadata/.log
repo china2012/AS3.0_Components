@@ -1,0 +1,904 @@
+!SESSION 2012-06-15 11:44:01.929 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.osgi 0 0 2012-06-15 11:44:02.603
+!MESSAGE The -clean (osgi.clean) option was not successful. Unable to clean the storage area: C:\Users\jjww\Adobe Flash Builder 4.5\cascaded\308971\configuration\org.eclipse.osgi
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:44:04.254
+!MESSAGE NLS unused message: repoMan_notExists in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:44:04.255
+!MESSAGE NLS unused message: repoMan_relativeLocation in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:44:04.255
+!MESSAGE NLS unused message: CacheManager_Neither_0_nor_1_found in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:44:04.256
+!MESSAGE NLS unused message: CacheManager_AuthenticationFaileFor_0 in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:44:04.256
+!MESSAGE NLS unused message: CacheManager_FailedCommunicationWithRepo_0 in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:44:04.371
+!MESSAGE NLS unused message: message_mirroringStatus in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:44:04.371
+!MESSAGE NLS unused message: exception_destinationNotModifiable in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:44:04.372
+!MESSAGE NLS unused message: exception_needSourceDestination in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:44:04.372
+!MESSAGE NLS unused message: exception_malformedRepoURI in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:44:04.373
+!MESSAGE NLS unused message: Mirroring_NO_MATCHING_DESCRIPTOR in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:44:04.373
+!MESSAGE NLS unused message: Mirroring_MISSING_DESCRIPTOR in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:44:04.373
+!MESSAGE NLS unused message: Mirroring_DIFFERENT_DESCRIPTOR_PROPERTY in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:44:04.374
+!MESSAGE NLS unused message: Mirroring_ValidationError in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:44:04.374
+!MESSAGE NLS unused message: Mirroring_compareAndDownload in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.ui 2 0 2012-06-15 11:44:26.484
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2012-06-15 11:44:26.484
+!MESSAGE Commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.OpenInfoCenter', categoryId='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.category.help'
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:44:30.515
+!MESSAGE NLS unused message: AutomaticUpdater_ErrorCheckingUpdates in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:44:30.516
+!MESSAGE NLS unused message: AutomaticUpdater_ResolutionOperationLabel in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:47:12.221
+!MESSAGE NLS unused message: FileBuffer_status_ok in: org.eclipse.core.internal.filebuffers.FileBuffersMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:47:12.222
+!MESSAGE NLS unused message: DocumentInputStream_error_read in: org.eclipse.core.internal.filebuffers.FileBuffersMessages
+
+!ENTRY org.eclipse.jface 2 0 2012-06-15 11:47:25.297
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-06-15 11:47:25.297
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@ef96)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@ef96)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-06-15 11:47:25.297
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@17185c8)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@17185c8)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-15 11:47:48.433
+!MESSAGE Error en SocketClientReceiver 69
+!STACK 0
+java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(Unknown Source)
+	at java.net.ServerSocket.bind(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at com.adobe.flexbuilder.flexunitrunresults.data.ClientSocketsManager.listen(ClientSocketsManager.java:57)
+	at com.adobe.flexbuilder.flexunitrunresults.data.ClientSocketsManager.run(ClientSocketsManager.java:113)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:52:22.292
+!MESSAGE NLS unused message: ExternalToolMigration_37 in: org.eclipse.ui.externaltools.internal.ui.ExternalToolsUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 11:52:22.293
+!MESSAGE NLS unused message: ExternalToolMigration_38 in: org.eclipse.ui.externaltools.internal.ui.ExternalToolsUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:15.772
+!MESSAGE NLS unused message: RefactoringHistoryWizard_no_refactorings_error in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:15.773
+!MESSAGE NLS unused message: RefactoringHistoryWizard_no_refactorings_message in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:15.773
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_label_country in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:15.774
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_label_language in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:15.774
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_this_month_format in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:15.774
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_last_month_format in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:15.775
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_label_variant in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:15.775
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_month_format in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:15.775
+!MESSAGE NLS unused message: RefactoringHistoryOverviewPage_description in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:15.776
+!MESSAGE NLS unused message: ShowRefactoringHistoryControl_edit_label in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:15.776
+!MESSAGE NLS unused message: RefactoringPropertyPage_confirm_delete_pattern in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:15.777
+!MESSAGE NLS unused message: RefactoringPropertyPage_edit_caption in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:15.777
+!MESSAGE NLS unused message: RefactoringPropertyPage_edit_message in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:15.778
+!MESSAGE NLS unused message: DeleteResourcesWizard_outOfSync in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:18.326
+!MESSAGE NLS unused message: TextChanges_error_unsaved_changes in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:18.327
+!MESSAGE NLS unused message: ParticipantDescriptor_correct in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:18.327
+!MESSAGE NLS unused message: UnknownRefactoringDescriptor_initialization_error in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:18.328
+!MESSAGE NLS unused message: DeleteFileOrFolderChange_deleting in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:18.328
+!MESSAGE NLS unused message: DeleteFileOrFolderChange_name in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 13:46:18.329
+!MESSAGE NLS unused message: MoveResourceChange_error_destination_already_exists in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-15 14:14:17.449
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-15 14:14:18.889
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-15 14:14:49.814
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-15 14:28:32.286
+!MESSAGE 断点没有相关联的标记。
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.updateMessageAttribute(FlexBreakpoint.java:188)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:142)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.removeInstantiationStatus(FlexBreakpoint.java:114)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.clearBreakpointLocations(FlexBreakpointMap.java:122)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.uninstantiate(FlexLineBreakpoint.java:557)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.uninstantiateBreakpoint(FlexDebugTarget.java:1054)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$12(FlexDebugTarget.java:1051)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$2.run(FlexDebugTarget.java:1092)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-15 14:28:32.287
+!MESSAGE 断点没有相关联的标记。
+!SESSION 2012-06-15 14:36:08.495 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.osgi 0 0 2012-06-15 14:36:09.255
+!MESSAGE The -clean (osgi.clean) option was not successful. Unable to clean the storage area: C:\Users\jjww\Adobe Flash Builder 4.5\cascaded\308971\configuration\org.eclipse.osgi
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:10.889
+!MESSAGE NLS unused message: repoMan_notExists in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:10.889
+!MESSAGE NLS unused message: repoMan_relativeLocation in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:10.890
+!MESSAGE NLS unused message: CacheManager_Neither_0_nor_1_found in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:10.890
+!MESSAGE NLS unused message: CacheManager_AuthenticationFaileFor_0 in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:10.891
+!MESSAGE NLS unused message: CacheManager_FailedCommunicationWithRepo_0 in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:11.030
+!MESSAGE NLS unused message: message_mirroringStatus in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:11.031
+!MESSAGE NLS unused message: exception_destinationNotModifiable in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:11.031
+!MESSAGE NLS unused message: exception_needSourceDestination in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:11.032
+!MESSAGE NLS unused message: exception_malformedRepoURI in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:11.032
+!MESSAGE NLS unused message: Mirroring_NO_MATCHING_DESCRIPTOR in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:11.033
+!MESSAGE NLS unused message: Mirroring_MISSING_DESCRIPTOR in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:11.033
+!MESSAGE NLS unused message: Mirroring_DIFFERENT_DESCRIPTOR_PROPERTY in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:11.034
+!MESSAGE NLS unused message: Mirroring_ValidationError in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:11.034
+!MESSAGE NLS unused message: Mirroring_compareAndDownload in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-06-15 14:36:13.763
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.osgi 2 0 2012-06-15 14:36:21.114
+!MESSAGE 在装入类“com.adobe.flexbuilder.ui.fileexclusion.FileExclusionContributor”时，线程“Thread[Worker-1,5,main]”等待（5000ms）线程“Thread[main,6,main]”完成启动 bundle“com.adobe.flexbuilder.ui_4.5.1.313231 [646]”超时。要避免死锁，线程“Thread[Worker-1,5,main]”正在处理但“com.adobe.flexbuilder.ui.fileexclusion.FileExclusionContributor”可能未完全初始化。
+!STACK 0
+org.osgi.framework.BundleException: 在线程“main”中，bundle“reference:file:plugins/com.adobe.flexbuilder.ui_4.5.1.313231/”的进度中存在状态更改。
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1077)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:282)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:338)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:232)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1197)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at com.adobe.flexbuilder.project.compiler.internal.DependentFilesResourceVisitor.initializeSkipList(DependentFilesResourceVisitor.java:159)
+	at com.adobe.flexbuilder.project.compiler.internal.DependentFilesResourceVisitor.<init>(DependentFilesResourceVisitor.java:133)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.copyDependents(BuilderUtils.java:437)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexProjectBuilder.build(FlexProjectBuilder.java:393)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.build(FlexIncrementalBuilder.java:187)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:629)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 37 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1077)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:282)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:338)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:232)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1197)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at com.adobe.flexbuilder.project.compiler.internal.DependentFilesResourceVisitor.initializeSkipList(DependentFilesResourceVisitor.java:159)
+	at com.adobe.flexbuilder.project.compiler.internal.DependentFilesResourceVisitor.<init>(DependentFilesResourceVisitor.java:133)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.copyDependents(BuilderUtils.java:437)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexProjectBuilder.build(FlexProjectBuilder.java:393)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.build(FlexIncrementalBuilder.java:187)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:629)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2012-06-15 14:36:26.116
+!MESSAGE 在装入类“com.adobe.flexbuilder.ui.fileexclusion.PreferenceInitializer”时，线程“Thread[Worker-1,5,main]”等待（5000ms）线程“Thread[main,6,main]”完成启动 bundle“com.adobe.flexbuilder.ui_4.5.1.313231 [646]”超时。要避免死锁，线程“Thread[Worker-1,5,main]”正在处理但“com.adobe.flexbuilder.ui.fileexclusion.PreferenceInitializer”可能未完全初始化。
+!STACK 0
+org.osgi.framework.BundleException: 在线程“main”中，bundle“reference:file:plugins/com.adobe.flexbuilder.ui_4.5.1.313231/”的进度中存在状态更改。
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1077)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:282)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	at com.adobe.flexbuilder.ui.fileexclusion.FileExclusionContributor.<clinit>(FileExclusionContributor.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance0(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at com.adobe.flexbuilder.project.compiler.internal.DependentFilesResourceVisitor.initializeSkipList(DependentFilesResourceVisitor.java:159)
+	at com.adobe.flexbuilder.project.compiler.internal.DependentFilesResourceVisitor.<init>(DependentFilesResourceVisitor.java:133)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.copyDependents(BuilderUtils.java:437)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexProjectBuilder.build(FlexProjectBuilder.java:393)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.build(FlexIncrementalBuilder.java:187)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:629)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 42 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1077)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:282)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	at com.adobe.flexbuilder.ui.fileexclusion.FileExclusionContributor.<clinit>(FileExclusionContributor.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance0(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at com.adobe.flexbuilder.project.compiler.internal.DependentFilesResourceVisitor.initializeSkipList(DependentFilesResourceVisitor.java:159)
+	at com.adobe.flexbuilder.project.compiler.internal.DependentFilesResourceVisitor.<init>(DependentFilesResourceVisitor.java:133)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.copyDependents(BuilderUtils.java:437)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexProjectBuilder.build(FlexProjectBuilder.java:393)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.build(FlexIncrementalBuilder.java:187)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:629)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui 2 0 2012-06-15 14:36:26.937
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2012-06-15 14:36:26.937
+!MESSAGE Commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.OpenInfoCenter', categoryId='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.category.help'
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:29.513
+!MESSAGE NLS unused message: AutomaticUpdater_ErrorCheckingUpdates in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:29.514
+!MESSAGE NLS unused message: AutomaticUpdater_ResolutionOperationLabel in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.235
+!MESSAGE NLS unused message: RefactoringHistoryWizard_no_refactorings_error in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.236
+!MESSAGE NLS unused message: RefactoringHistoryWizard_no_refactorings_message in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.236
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_label_country in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.237
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_label_language in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.237
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_this_month_format in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.237
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_last_month_format in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.238
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_label_variant in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.238
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_month_format in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.239
+!MESSAGE NLS unused message: RefactoringHistoryOverviewPage_description in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.239
+!MESSAGE NLS unused message: ShowRefactoringHistoryControl_edit_label in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.240
+!MESSAGE NLS unused message: RefactoringPropertyPage_confirm_delete_pattern in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.240
+!MESSAGE NLS unused message: RefactoringPropertyPage_edit_caption in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.241
+!MESSAGE NLS unused message: RefactoringPropertyPage_edit_message in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.241
+!MESSAGE NLS unused message: DeleteResourcesWizard_outOfSync in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.275
+!MESSAGE NLS unused message: TextChanges_error_unsaved_changes in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.276
+!MESSAGE NLS unused message: ParticipantDescriptor_correct in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.276
+!MESSAGE NLS unused message: UnknownRefactoringDescriptor_initialization_error in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.277
+!MESSAGE NLS unused message: DeleteFileOrFolderChange_deleting in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.277
+!MESSAGE NLS unused message: DeleteFileOrFolderChange_name in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:36:54.277
+!MESSAGE NLS unused message: MoveResourceChange_error_destination_already_exists in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:37:11.787
+!MESSAGE NLS unused message: FileBuffer_status_ok in: org.eclipse.core.internal.filebuffers.FileBuffersMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 14:37:11.788
+!MESSAGE NLS unused message: DocumentInputStream_error_read in: org.eclipse.core.internal.filebuffers.FileBuffersMessages
+
+!ENTRY org.eclipse.jface 2 0 2012-06-15 14:38:04.729
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-06-15 14:38:04.729
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@3b889b)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@3b889b)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-06-15 14:38:04.729
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@857f69)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@857f69)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-15 14:50:28.264
+!MESSAGE Error en SocketClientReceiver 69
+!STACK 0
+java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(Unknown Source)
+	at java.net.ServerSocket.bind(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at com.adobe.flexbuilder.flexunitrunresults.data.ClientSocketsManager.listen(ClientSocketsManager.java:57)
+	at com.adobe.flexbuilder.flexunitrunresults.data.ClientSocketsManager.run(ClientSocketsManager.java:113)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-15 19:19:21.548
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-15 19:19:22.304
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 1 2012-06-15 19:54:26.644
+!MESSAGE Worker thread ended job: 正在启动 demo1(4130), but still holds rule: ThreadJob(正在启动 demo1(4130),[com.adobe.flexide.launching.FlexLaunchSchedulingRule@1b5c49c,])
+!SESSION 2012-06-15 20:00:07.442 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:08.768
+!MESSAGE NLS unused message: repoMan_notExists in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:08.768
+!MESSAGE NLS unused message: repoMan_relativeLocation in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:08.768
+!MESSAGE NLS unused message: CacheManager_Neither_0_nor_1_found in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:08.768
+!MESSAGE NLS unused message: CacheManager_AuthenticationFaileFor_0 in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:08.768
+!MESSAGE NLS unused message: CacheManager_FailedCommunicationWithRepo_0 in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:08.878
+!MESSAGE NLS unused message: message_mirroringStatus in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:08.878
+!MESSAGE NLS unused message: exception_destinationNotModifiable in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:08.878
+!MESSAGE NLS unused message: exception_needSourceDestination in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:08.878
+!MESSAGE NLS unused message: exception_malformedRepoURI in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:08.878
+!MESSAGE NLS unused message: Mirroring_NO_MATCHING_DESCRIPTOR in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:08.878
+!MESSAGE NLS unused message: Mirroring_MISSING_DESCRIPTOR in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:08.878
+!MESSAGE NLS unused message: Mirroring_DIFFERENT_DESCRIPTOR_PROPERTY in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:08.878
+!MESSAGE NLS unused message: Mirroring_ValidationError in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:08.878
+!MESSAGE NLS unused message: Mirroring_compareAndDownload in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.ui 2 0 2012-06-15 20:00:21.049
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2012-06-15 20:00:21.049
+!MESSAGE Commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.OpenInfoCenter', categoryId='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.category.help'
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:22.613
+!MESSAGE NLS unused message: FileBuffer_status_ok in: org.eclipse.core.internal.filebuffers.FileBuffersMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:22.613
+!MESSAGE NLS unused message: DocumentInputStream_error_read in: org.eclipse.core.internal.filebuffers.FileBuffersMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:25.935
+!MESSAGE NLS unused message: AutomaticUpdater_ErrorCheckingUpdates in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-15 20:00:25.935
+!MESSAGE NLS unused message: AutomaticUpdater_ResolutionOperationLabel in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+
+!ENTRY org.eclipse.jface 2 0 2012-06-15 20:00:30.074
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-06-15 20:00:30.074
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1499c0f)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1499c0f)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-06-15 20:00:30.074
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@1a4c98e)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@1a4c98e)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+!SESSION 2012-06-17 13:57:02.909 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data E:\work\myfile\project\component
+
+!ENTRY org.eclipse.ui 2 0 2012-06-17 13:57:06.526
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2012-06-17 13:57:06.526
+!MESSAGE Commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.OpenInfoCenter', categoryId='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.category.help'
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-17 13:57:08.124
+!MESSAGE NLS unused message: FileBuffer_status_ok in: org.eclipse.core.internal.filebuffers.FileBuffersMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-17 13:57:08.125
+!MESSAGE NLS unused message: DocumentInputStream_error_read in: org.eclipse.core.internal.filebuffers.FileBuffersMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-17 13:57:11.278
+!MESSAGE NLS unused message: AutomaticUpdater_ErrorCheckingUpdates in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-17 13:57:11.278
+!MESSAGE NLS unused message: AutomaticUpdater_ResolutionOperationLabel in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+
+!ENTRY org.eclipse.osgi 2 0 2012-06-17 13:57:17.370
+!MESSAGE 在装入类“com.adobe.flexbuilder.debug.model.FlexDebugTarget”时，线程“Thread[Worker-6,5,main]”等待（5000ms）线程“Thread[main,6,main]”完成启动 bundle“com.adobe.flexbuilder.debug_4.5.1.313231 [587]”超时。要避免死锁，线程“Thread[Worker-6,5,main]”正在处理但“com.adobe.flexbuilder.debug.model.FlexDebugTarget”可能未完全初始化。
+!STACK 0
+org.osgi.framework.BundleException: 在线程“main”中，bundle“reference:file:plugins/com.adobe.flexbuilder.debug_4.5.1.313231/”的进度中存在状态更改。
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1077)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:282)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	at com.adobe.flexbuilder.debug.PlayerLaunchListener.handleDebugEvents(PlayerLaunchListener.java:98)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1089)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1123)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:390)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 20 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1077)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:282)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	at com.adobe.flexbuilder.debug.PlayerLaunchListener.handleDebugEvents(PlayerLaunchListener.java:98)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1089)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1123)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:390)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jface 2 0 2012-06-17 13:57:17.471
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-06-17 13:57:17.471
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@16598c5)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@16598c5)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-06-17 13:57:17.471
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@110e392)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@110e392)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)

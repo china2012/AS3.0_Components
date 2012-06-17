@@ -1,0 +1,15 @@
+package
+{
+	public interface IListSimple
+	{
+		function set dataProvider(dp);
+		function get dataProvider();
+		function set renderer();
+		function get renderer();
+		function set rowHeight();
+		function get rowHeight();
+		function set rowCount();
+		function get rowCount();
+		function getRendererOfData(data:Object);
+	}
+}

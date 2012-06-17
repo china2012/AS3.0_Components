@@ -1,0 +1,7 @@
+package
+{
+	public interface IListSimple
+	{
+		function set dataProvider():void;
+	}
+}

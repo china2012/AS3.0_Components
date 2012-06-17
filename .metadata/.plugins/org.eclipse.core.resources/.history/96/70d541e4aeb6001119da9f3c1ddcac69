@@ -1,0 +1,7 @@
+package
+{
+	public interface IRenderer
+	{
+		function set data(value:Object):void;
+	}
+}

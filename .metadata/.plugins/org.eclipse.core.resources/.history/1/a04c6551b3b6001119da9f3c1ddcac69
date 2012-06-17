@@ -1,0 +1,26 @@
+package
+{
+	import fl.controls.TileList;
+	import fl.data.DataProvider;
+	
+	import flash.display.Sprite;
+	
+	public class demo1 extends Sprite
+	{
+		public function demo1()
+		{
+			var listSimple:ListSimple = new ListSimple();
+			var dataProvider:DataProvider = listSimple.dataProvider;
+			dataProvider.addItem({});
+			dataProvider.addItem({});
+			dataProvider.addItem({});
+			dataProvider.addItem({});
+			dataProvider.addItem({});
+			
+			listSimple.dataProvider = dataProvider;
+			listSimple.rowHeight = 50;
+			listSimple.rowCount = 5;
+			addChild(listSimple);
+		}
+	}
+}

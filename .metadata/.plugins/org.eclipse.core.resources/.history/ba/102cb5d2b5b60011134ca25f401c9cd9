@@ -1,0 +1,23 @@
+package
+{
+	import flash.display.Sprite;
+	
+	import list_simple.SimpleRenderer;
+	
+	public class Renderer extends SimpleRenderer
+	{
+		public function Renderer()
+		{
+			super();
+			draw();
+		}
+		
+		private function draw():void
+		{
+			var sp:Sprite = new Sprite();
+			sp.graphics.beginFill(0xFFFFFF * Math.random());
+			
+			var len:int = Math.random() * 100;
+		}
+	}
+}

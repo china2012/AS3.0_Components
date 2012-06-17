@@ -1,0 +1,16 @@
+package
+{
+	import fl.controls.TileList;
+	import fl.data.DataProvider;
+	
+	import flash.display.Sprite;
+	
+	public class demo1 extends Sprite
+	{
+		public function demo1()
+		{
+			var listSimple:ListSimple = new ListSimple();
+			addChild(listSimple);
+		}
+	}
+}

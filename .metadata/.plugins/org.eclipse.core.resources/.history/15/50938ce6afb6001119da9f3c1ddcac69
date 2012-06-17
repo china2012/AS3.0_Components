@@ -1,0 +1,181 @@
+package
+{
+	import fl.controls.listClasses.ICellRenderer;
+	import fl.controls.listClasses.ImageCell;
+	import fl.data.DataProvider;
+	import fl.events.DataChangeEvent;
+	import fl.events.DataChangeType;
+	
+	import flash.display.DisplayObject;
+	import flash.display.Sprite;
+	
+	public class ListSimple extends Sprite implements IListSimple
+	{
+		// know
+		private var _dataProvider:DataProvider;
+		private var _cellRenderer:Class; // must Inherit ICellRenderer
+		private var _rowHeight:Number;
+		private var _rowCount:uint;
+		
+		// don't know
+		private var _renderers:Vector.<Sprite>;
+		private var _container:Sprite;
+		private var _containerMask:Sprite;
+		
+		public function ListSimple()
+		{
+			_renderers = new Vector.<Sprite>();
+			_container = new Sprite();
+			_containerMask = new Sprite();
+			_container.mask = _containerMask;
+			addChild(_container);
+			addChild(_containerMask);
+			
+			// set _renderer default
+			_cellRenderer = ImageCell;
+		}
+		
+		////////////////////////////////////////////////////////////////
+		// Internal Logic
+		private function refreshContainerMask():void
+		{
+			var maxWidth:Number = _cellRenderer.width;
+			var maxHeight:Number = _rowCount * _rowHeight;
+			_containerMask.graphics.clear();
+			_containerMask.graphics.beginFill(0);
+			_containerMask.graphics.drawRect(0, 0, maxWidth, maxHeight);
+			_containerMask.graphics.endFill();
+		}
+		
+		private function refreshRenderersPosition():void
+		{
+			
+		}
+		
+		private function refreshRendererData(index:int):void
+		{
+			ICellRenderer(_renderers[index]).data = _dataProvider.getItemAt(index);
+		}
+		
+		////////////////////////////////////////////////////////////////
+		// on list config change
+		private function onRowCountChange():void
+		{
+			refreshContainerMask();
+		}
+		
+		private function onRowHeightChange():void
+		{
+			refreshContainerMask();
+		}
+		
+		protected function onDataProviderChange(event:DataChangeEvent):void
+		{
+			var i:int;
+			var d:DisplayObject;
+			var index:int;
+			switch (event.changeType)
+			{
+				case DataChangeType.ADD:
+				{
+					for (i=0; i<event.items.length; i++){
+						if (!event.items[i])
+							continue;
+						index = i + event.startIndex;
+						if (!_renderers[index]){
+							_renderers[index] = new _cellRenderer();
+							_renderers[index].y = 1;
+							_container.addChild(_renderers[index]);
+						}
+						refreshRendererData(index);
+					}
+					break;
+				}
+				case DataChangeType.CHANGE:
+				{
+					break;
+				}
+				case DataChangeType.INVALIDATE:
+				{
+					break;
+				}
+				case DataChangeType.INVALIDATE_ALL:
+				{
+					break;
+				}
+				case DataChangeType.REMOVE:
+				{
+					break;
+				}
+				case DataChangeType.REMOVE_ALL:
+				{
+					break;
+				}
+				case DataChangeType.REPLACE:
+				{
+					break;
+				}
+				case DataChangeType.SORT:
+				{
+					break;
+				}
+			}
+		}
+		
+		////////////////////////////////////////////////////////////////
+		// in implement function
+		public function set dataProvider(dp:DataProvider):void
+		{
+			_dataProvider = dp;
+			_dataProvider.addEventListener(DataChangeEvent.DATA_CHANGE, onDataProviderChange);
+		}
+		
+		public function get dataProvider():DataProvider
+		{
+			return _dataProvider;
+		}
+		
+		public function set renderer(value:Class):void
+		{
+			_cellRenderer = value;
+		}
+		
+		public function get renderer():Class
+		{
+			return _cellRenderer;
+		}
+		
+		public function set rowHeight(value:Number):void
+		{
+			_rowHeight = value;
+			onRowHeightChange();
+		}
+		
+		public function get rowHeight():Number
+		{
+			return _rowHeight;
+		}
+		
+		public function set rowCount(value:uint):void
+		{
+			_rowCount = value;
+			onRowCountChange();
+		}
+		
+		public function get rowCount():uint
+		{
+			return _rowCount;
+		}
+		
+		public function getRendererOfData(data:Object):Sprite
+		{
+			var len:uint = _renderers.length;
+			for (var i:int=0; i<len; i++)
+			{
+				if (ICellRenderer(_renderers[i]).data == data)
+					break;
+			}
+			return _renderers[i];
+		}
+	}
+}

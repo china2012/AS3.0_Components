@@ -1,0 +1,52 @@
+package
+{
+	public class Renderer implements IRenderer
+	{
+		private var _id:int;
+		private var _data:Object;
+		
+		public function Renderer()
+		{
+			
+		}
+		
+		////////////////////////////////////////////////////////////////
+		// on list config change
+		private function refreshView():void
+		{
+			
+		}
+		
+		////////////////////////////////////////////////////////////////
+		// in implement function
+		public function set data(value:Object):void
+		{
+			_data = value;
+			refreshView();
+		}
+		
+		public function get data():Object
+		{
+			return _data;
+		}
+		
+		public function set id(value:int):void
+		{
+			_id = valuel
+		}
+		
+		public function get id():int
+		{
+			return 0;
+		}
+		
+		public function set selected(value:Boolean):void
+		{
+		}
+		
+		public function get selected():Boolean
+		{
+			return false;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+package
+{
+	import fl.controls.listClasses.ICellRenderer;
+	import fl.data.DataProvider;
+
+	public interface IListSimple
+	{
+		function set dataProvider(dp:DataProvider);
+		function get dataProvider():DataProvider;
+		function set renderer(_r:ICellRenderer);
+		function get renderer():ICellRenderer;
+		function set rowHeight();
+		function get rowHeight();
+		function set rowCount();
+		function get rowCount();
+		function getRendererOfData(data:Object);
+	}
+}
