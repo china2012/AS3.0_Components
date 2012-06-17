@@ -19,6 +19,9 @@ package list_simple.interfaces
 		function get rowHeight():Number;
 		function set rowCount(value:uint):void;
 		function get rowCount():uint;
-		function getRendererOfData(data:Object):SimpleRenderer;
+		function set columnCount(value:uint):void;
+		function get columnCount():uint;
+		function set scrollY(value:Number):void;
+		function get scrollY():Number;
 	}
 }

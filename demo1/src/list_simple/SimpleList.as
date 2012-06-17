@@ -17,10 +17,11 @@ package list_simple
 	{
 		// know
 		private var _dataProvider:DataProvider;
-		private var _cellRenderer:Class;
-		private var _rowWidth:Number;			// default is INT_DEFAULT
-		private var _rowHeight:Number;			// default is INT_DEFAULT
-		private var _rowCount:Number;			// default is INT_DEFAULT
+		private var _renderer:Class;
+		private var _rowWidth:Number;
+		private var _rowHeight:Number;
+		private var _rowCount:uint;
+		private var _columnCount:uint
 		
 		// don't know
 		private var _renderers:Vector.<SimpleRenderer>;
@@ -28,11 +29,10 @@ package list_simple
 		private var _containerMask:Sprite;
 		
 		// default value
-		private const INT_DEFAULT:int = -9999;
-		
-		private var default_rowWidth:Number = 200;
-		private var default_rowHeight:Number = 400;
-		private var default_rowCount:Number = 2;
+		private var default_rowWidth:Number = 400;
+		private var default_rowHeight:Number = 100;
+		private var default_rowCount:uint = 3;
+		private var default_columuCount:uint = 3;
 		private var default_renderer:Class = ImageCell;
 		
 		public function SimpleList()
@@ -43,10 +43,10 @@ package list_simple
 			_container.mask = _containerMask;
 			addChild(_container);
 			addChild(_containerMask);
-			
+
 			_dataProvider = new DataProvider();
 			_dataProvider.addEventListener(DataChangeEvent.DATA_CHANGE, onDataProviderChange);
-			
+
 			initializeDefault();
 		}
 		
@@ -55,9 +55,12 @@ package list_simple
 		// Some initialize's
 		private function initializeDefault():void
 		{
-			_rowCount = INT_DEFAULT;
-			_rowWidth = INT_DEFAULT;
-			_rowHeight = INT_DEFAULT;
+			_renderer = default_renderer;
+			_rowWidth = default_rowWidth;
+			_rowHeight = default_rowHeight;
+			_rowCount = default_rowCount;
+			
+			refreshAll();
 		}
 		
 		////////////////////////////////////////////////////////////////
@@ -70,19 +73,47 @@ package list_simple
 			_containerMask.graphics.beginFill(0);
 			_containerMask.graphics.drawRect(0, 0, maxWidth, maxHeight);
 			_containerMask.graphics.endFill();
+			trace("refreshContainerMask");
 		}
 		
 		private function refreshAllRendererPosition():void
 		{
+			var lineAt:uint;
+			var columuAt:uint;
 			for (var i:int=0; i<_renderers.length; i++)
 			{
 				_renderers[i].y = i * rowHeight;
+				trace("renderer position(line="+lineAt+",columu="+columuAt+")");
 			}
+			trace("refreshAllRendererPosition");
+		}
+		
+		// when your set the renderer And set's value not like last set _renderer
+		private function refreshAllRendererInstance():void
+		{
+			for (var i:int=0; i<_renderers.length; i++)
+			{
+				var d:SimpleRenderer = new _renderer();
+				d.y = i * rowHeight;
+				_container.addChild(d);
+				
+				_renderers[i] = d;
+			}
+			trace("refreshAllRendererInstance");
 		}
 		
 		private function refreshRendererData(index:int):void
 		{
 			_renderers[index].data = _dataProvider.getItemAt(index);
+			trace("refreshRendererData");
+		}
+		
+		public function refreshAll():void
+		{
+			refreshAllRendererPosition();
+			refreshAllRendererInstance();
+			refreshContainerMask();
+			trace("refreshAll");
 		}
 		
 		////////////////////////////////////////////////////////////////
@@ -157,6 +188,11 @@ package list_simple
 			}
 		}
 		
+		private function onScrollYChange():void
+		{
+			// dataProvider.lenght > rowCount then use the 
+		}
+		
 		////////////////////////////////////////////////////////////////
 		// in implement function
 		public function set dataProvider(dp:DataProvider):void
@@ -175,14 +211,16 @@ package list_simple
 			{
 				throw new Error("the renderer must extends [rendererSimple]");
 			}
-			_cellRenderer = value;
+			if (value != _renderer)
+			{
+				_renderer = value;
+				refreshAllRendererInstance();
+			}
 		}
 		
 		public function get renderer():Class
 		{
-			if (!_cellRenderer)
-				return default_renderer;
-			return _cellRenderer;
+			return _renderer;
 		}
 		
 		public function set rowWidth(value:Number):void
@@ -193,8 +231,6 @@ package list_simple
 		
 		public function get rowWidth():Number
 		{
-			if (_rowWidth == INT_DEFAULT)
-				return default_rowWidth;
 			return _rowWidth;
 		}
 		
@@ -206,8 +242,6 @@ package list_simple
 		
 		public function get rowHeight():Number
 		{
-			if (_rowHeight == INT_DEFAULT)
-				return default_rowHeight;
 			return _rowHeight;
 		}
 		
@@ -219,20 +253,32 @@ package list_simple
 		
 		public function get rowCount():uint
 		{
-			if (_rowCount == INT_DEFAULT)
-				return default_rowCount;
 			return _rowCount;
 		}
 		
-		public function getRendererOfData(data:Object):SimpleRenderer
+		public function set columnCount(value:uint):void
 		{
-			var len:uint = _renderers.length;
-			for (var i:int=0; i<len; i++)
+			_columnCount = value;
+			refreshAllRendererPosition();
+		}
+		
+		public function get columnCount():uint
+		{
+			return _columnCount;
+		}
+		
+		public function set scrollY(value:Number):void
+		{
+			if (_container.y != value)
 			{
-				if (ICellRenderer(_renderers[i]).data == data)
-					break;
+				_container.y = value;
+				onScrollYChange();
 			}
-			return _renderers[i];
+		}
+		
+		public function get scrollY():Number
+		{
+			return _container.y;
 		}
 	}
 }
