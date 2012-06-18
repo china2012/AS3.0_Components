@@ -1,5 +1,7 @@
 package
 {
+	import com.greensock.TweenLite;
+	
 	import fl.controls.Button;
 	import fl.controls.TileList;
 	import fl.data.DataProvider;
@@ -50,12 +52,14 @@ package
 		
 		protected function onMouseClickButton1(event:MouseEvent):void
 		{
-			listSimple.scrollY -= 100;
+//			TweenLite.to(listSimple, 1, {y:listSimple.y-100});
+			TweenLite.to(listSimple, 1, {scrollY:listSimple.scrollY-100});
 		}
 		
 		protected function onMouseClickButton2(event:MouseEvent):void
 		{
-			listSimple.scrollY += 100;
+//			TweenLite.to(listSimple, 1, {y:listSimple.y+100});
+			TweenLite.to(listSimple, 1, {scrollY:listSimple.scrollY+100});
 		}
 	}
 }

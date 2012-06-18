@@ -25,19 +25,10 @@ package list_simple
 		private var _columnCount:uint
 		
 		// don't know
-		private var _renderers:Vector.<SimpleRenderer>;
-		private var _tempXRollRenderers:Vector.<SimpleRenderer>;
-		private var _tempYRollRenderers:Vector.<SimpleRenderer>;
 		private var _container:Sprite;
 		private var _containerMask:Sprite;
-		
-		// default value
-		private var default_rowWidth:Number = 125;
-		private var default_rowHeight:Number = 125;
-		private var default_rowCount:uint = 4;
-		private var default_columnCount:uint = 3;
-		private var default_renderer:Class = ImageCell;
-		
+		private var _renderers:Vector.<SimpleRenderer>;
+		private var _renderersSort:Vector.<SimpleRenderer>;
 		// use majicion when you change the scrollX or scrollY and dataprovider.lenght > container's maxcount
 		// at container, # is majicion and * is renderer of dataproviders
 		/**If _direction==ScrollBarDirection.VERTICAL*/
@@ -52,15 +43,22 @@ package list_simple
 		// # * * * * * * * * #
 		// # * * * * * * * * #
 		// # * * * * * * * * #
-		private var _magicians:Vector.<SimpleRenderer>;
+		private var _renderersMagician:Vector.<SimpleRenderer>;
+		
+		// default value
+		private var default_rowWidth:Number = 125;
+		private var default_rowHeight:Number = 125;
+		private var default_rowCount:uint = 4;
+		private var default_columnCount:uint = 3;
+		private var default_renderer:Class = ImageCell;
+		
 		private var _direction:String;
 		
 		public function SimpleList()
 		{
 			_renderers = new Vector.<SimpleRenderer>();
-			_magicians = new Vector.<SimpleRenderer>();
-			_tempXRollRenderers = new Vector.<SimpleRenderer>();
-			_tempYRollRenderers = new Vector.<SimpleRenderer>();
+			_renderersMagician = new Vector.<SimpleRenderer>();
+			_renderersSort = new Vector.<SimpleRenderer>();
 			_container = new Sprite();
 			_containerMask = new Sprite();
 			_container.mask = _containerMask;
@@ -83,8 +81,10 @@ package list_simple
 			_rowCount = default_rowCount;
 			_columnCount = default_columnCount;
 			_direction = ScrollBarDirection.VERTICAL;
-			
 			refreshAll();
+			
+			_lastStartIndex = startIndex;
+			_lastEndIndex = endIndex;
 		}
 		
 		////////////////////////////////////////////////////////////////
@@ -114,9 +114,7 @@ package list_simple
 		private function refreshAllRendererPosition():void
 		{
 			for (var i:int=0; i<_renderers.length; i++)
-			{
 				refreshRendererPosition(i);
-			}
 			trace("refreshAllRendererPosition");
 		}
 		
@@ -124,7 +122,7 @@ package list_simple
 		{
 			var d:SimpleRenderer = _renderers[index];
 			var rowAt:int = getRowAt(index);
-			var columnAt:int = getColumuAt(index);
+			var columnAt:int = getColumnAt(index);
 			
 			d.x = columnAt * rowWidth;
 			d.y = rowAt * rowHeight;
@@ -139,7 +137,6 @@ package list_simple
 				var d:SimpleRenderer = new renderer();
 				d.y = i * rowHeight;
 				_container.addChild(d);
-				
 				_renderers[i] = d;
 			}
 			trace("refreshAllRendererInstance");
@@ -168,7 +165,7 @@ package list_simple
 					_renderers.pop();
 				}
 			}
-				
+			trace("refreshRenderersLength");
 		}
 		
 		private function refreshRendererData(index:int):void
@@ -187,25 +184,45 @@ package list_simple
 		
 		private function refreshMajicionLength():void
 		{
-			var minMajicionNumber:uint;
-			if (_direction == ScrollBarDirection.VERTICAL)
-				minMajicionNumber = columnCount * 2;
-			else
-				minMajicionNumber = rowCount * 2;
-			
-			while (minMajicionNumber > _magicians.length)
-				_magicians.push( new renderer() );
-
-			trace("refreshMajicionLenght => length:"+_magicians.length+"");
+			var num:uint = _direction == ScrollBarDirection.VERTICAL ? columnCount * 2:rowCount * 2;
+			while (num != _renderersMagician.length)
+			{
+				if (num > _renderersMagician.length)
+				{
+					_renderersMagician.push( new renderer() );
+				}
+				else if (num < _renderersMagician.length)
+				{
+					if (_renderersMagician[0].parent)
+						_renderersMagician[0].parent.removeChild(_renderersMagician[0]);
+					_renderersMagician.splice(0,1);
+				}
+			}
+			trace("refreshMajicionLenght => length:"+_renderersMagician.length+"");
 		}
 		
 		private function refreshScrollDirection():void
 		{
 			refreshMajicionLength();
+			trace("refreshScrollDirection");
+		}
+		
+		private function refreshRenderersSortContent():void
+		{
+			_renderersSort.splice(0, _renderersSort.length);
+			for (var topIndex:int=0; topIndex<_columnCount; topIndex++)
+				_renderersSort.push( _renderersMagician[topIndex] );
+			
+			for (var middleIndex:int=0; middleIndex<_renderers.length; middleIndex++)
+				_renderersSort.push( _renderers[middleIndex] );
+			
+			for (var bottomIndex:int=0; bottomIndex<_columnCount; bottomIndex++)
+				_renderersSort.push( _renderersMagician[topIndex + bottomIndex] );
+			trace("refreshRenderersSortContent");
 		}
 		
 		//====some get and set
-		private function getColumuAt(index:int):int
+		private function getColumnAt(index:int):int
 		{
 			return index % columnCount;
 		}
@@ -223,7 +240,13 @@ package list_simple
 			}
 			else
 			{
-				return -int((_container.y - _containerMask.y) / rowHeight) * columnCount;
+				var verticalStartIndex:Number = -(_container.y - _containerMask.y) / rowHeight;
+				if (verticalStartIndex < 0)
+					return 0;
+				else if (verticalStartIndex > 0)
+					return int(verticalStartIndex) * columnCount;
+				else if (verticalStartIndex == 0)
+					return 0;
 			}
 			return -1;
 		}
@@ -236,26 +259,45 @@ package list_simple
 			}
 			else
 			{
-				if (((_container.y - _containerMask.y) / rowHeight) is int)
-					return startIndex + (rowCount - 1) * columnCount + 1;
-				return startIndex + rowCount * columnCount +1;
+				var verticalStartIndex:Number = -(_container.y - _containerMask.y) / rowHeight;
+				var verticalEndIndex:int = startIndex + rowCount * columnCount + columnCount;
+				verticalEndIndex -= 1;
+				if (verticalStartIndex is int)
+					verticalEndIndex -= columnCount;
+				if (verticalEndIndex > dataProvider.length)
+					verticalEndIndex = dataProvider.length-1;
+				
+				return verticalEndIndex;
 			}
 			return -1;
 		}
 		
 		////////////////////////////////////////////////////////////////
 		// on list config change
+		/**
+		 * private function onRowCountChange():void
+		 * private function onColumnCountChange():void
+		 * private function onRowHeightChange():void
+		 * private function onRowWidthChange():void
+		 * private function onRendererInstanceChange():void
+		 * protected function onDataProviderChange(event:DataChangeEvent):void
+		 * private function onScrollYChange():void
+		 * private function onScrollXChange():void
+		 * private function onScrollDirection():void
+		 */
 		private function onRowCountChange():void
 		{
 			refreshContainerMask();
 			refreshRenderersLength();
 			refreshMajicionLength();
+			refreshRenderersSortContent();
 		}
 		
 		private function onColumnCountChange():void
 		{
 			refreshAllRendererPosition();
 			refreshMajicionLength();
+			refreshRenderersSortContent();
 		}
 		
 		private function onRowHeightChange():void
@@ -273,6 +315,7 @@ package list_simple
 		{
 			refreshAllRendererInstance();
 			refreshMajicionLength();
+			refreshRenderersSortContent();
 		}
 		
 		protected function onDataProviderChange(event:DataChangeEvent):void
@@ -288,7 +331,7 @@ package list_simple
 						if (!event.items[i])
 							continue;
 						index = i + event.startIndex;
-						if (index < rowCount * columnCount)
+//						if (index < rowCount * columnCount)
 						{
 							if (_renderers.length <= index){
 								d = new renderer();
@@ -297,9 +340,9 @@ package list_simple
 							}
 							refreshRendererData(index);
 							refreshRendererPosition(index);
+							refreshRenderersSortContent();
 						}
 					}
-					
 					break;
 				}
 				case DataChangeType.CHANGE:
@@ -334,20 +377,30 @@ package list_simple
 			}
 		}
 		
+		// ==============================================================================
+		private var _lastStartIndex:int;
+		private var _lastEndIndex:int;
+		// ==============================================================================
 		private function onScrollYChange():void
 		{
 			if (_direction != ScrollBarDirection.VERTICAL)
 				return;
+			
 			trace("==the current("+startIndex+","+endIndex+") list data has:");
 			
-			// add renderer for  _tempYRollRenderers --sort
-			
-			
-			// set renderer data
-			for (var i:int=0; i<_tempYRollRenderers.length; i++)
+			if (_lastStartIndex != startIndex || _lastEndIndex != endIndex)
 			{
-				var dpIndex:int = startIndex + i;
-				_tempYRollRenderers[i].data = _dataProvider[dpIndex];
+//				_lastStartIndex = startIndex;
+//				_lastEndIndex = endIndex;
+				// add renderer for  _tempYRollRenderers --sort
+				
+				
+				// set renderer data
+//				for (var i:int=0; i<_renderersSort.length; i++)
+//				{
+//					var dpIndex:int = startIndex + i;
+//					_renderersSort[i].data = _dataProvider.getItemAt(dpIndex);
+//				}
 			}
 		}
 		
@@ -360,6 +413,7 @@ package list_simple
 		private function onScrollDirection():void
 		{
 			refreshScrollDirection();
+			refreshRenderersSortContent();
 		}
 		
 		////////////////////////////////////////////////////////////////

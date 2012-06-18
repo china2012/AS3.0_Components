@@ -1614,3 +1614,414 @@ org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 !SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-18 14:56:37.066
 !MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 16:03:29.798
+!MESSAGE Avoiding non-existent source container ${DOCUMENTS}/Libraries while figuring out files to copy to output folder.
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.copyDependents(BuilderUtils.java:494)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexProjectBuilder.build(FlexProjectBuilder.java:393)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.build(FlexIncrementalBuilder.java:187)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:629)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 16:06:11.103
+!MESSAGE Avoiding non-existent source container Libraries while figuring out files to copy to output folder.
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.copyDependents(BuilderUtils.java:494)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexProjectBuilder.build(FlexProjectBuilder.java:393)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.build(FlexIncrementalBuilder.java:187)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:629)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 16:08:10.616
+!MESSAGE Error instantiating breakpoint
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:119)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.addInstantiationStatus(FlexBreakpoint.java:104)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.setBreakpointLocations(FlexBreakpointMap.java:101)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:507)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-18 16:08:10.616
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:11:36.505
+!MESSAGE 断点没有相关联的标记。
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.updateMessageAttribute(FlexBreakpoint.java:188)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:142)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.removeInstantiationStatus(FlexBreakpoint.java:114)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.clearBreakpointLocations(FlexBreakpointMap.java:122)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.uninstantiate(FlexLineBreakpoint.java:557)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.uninstantiateBreakpoint(FlexDebugTarget.java:1054)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$12(FlexDebugTarget.java:1051)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$2.run(FlexDebugTarget.java:1092)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-18 17:11:36.505
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:14:19.898
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:14:20.658
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:14:21.409
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:14:22.160
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:29.759
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:30.557
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:31.321
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:32.101
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:32.866
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:33.630
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:33.630
+!MESSAGE Error instantiating breakpoint
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:119)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.addInstantiationStatus(FlexBreakpoint.java:104)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.setBreakpointError(FlexBreakpointMap.java:161)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:513)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-18 17:29:33.630
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:33.630
+!MESSAGE Error instantiating breakpoint
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:119)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.addInstantiationStatus(FlexBreakpoint.java:104)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.setBreakpointError(FlexBreakpointMap.java:161)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:513)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-18 17:29:33.630
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:33.630
+!MESSAGE Error instantiating breakpoint
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:119)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.addInstantiationStatus(FlexBreakpoint.java:104)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.setBreakpointError(FlexBreakpointMap.java:161)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:513)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-18 17:29:33.630
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:33.630
+!MESSAGE Error instantiating breakpoint
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:119)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.addInstantiationStatus(FlexBreakpoint.java:104)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.setBreakpointError(FlexBreakpointMap.java:161)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:513)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-18 17:29:33.630
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:29.212
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:29.963
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:30.714
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:31.476
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:32.226
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:32.978
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:33.728
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:34.621
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:35.374
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:36.124
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2012-06-18 19:08:42.653
+!MESSAGE Error during shutdown
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: null argument:
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:85)
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:73)
+	at org.eclipse.core.internal.events.ResourceChangeListenerList.remove(ResourceChangeListenerList.java:146)
+	at org.eclipse.core.internal.events.NotificationManager.removeListener(NotificationManager.java:305)
+	at org.eclipse.core.internal.resources.Workspace.removeResourceChangeListener(Workspace.java:1934)
+	at org.eclipse.wst.server.core.internal.ResourceManager.shutdownImpl(ResourceManager.java:367)
+	at org.eclipse.wst.server.core.internal.ResourceManager.shutdown(ResourceManager.java:313)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.stop(ServerPlugin.java:360)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:843)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:836)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:501)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:550)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1097)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:597)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:266)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:690)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:588)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:415)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
