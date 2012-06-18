@@ -1,18 +1,24 @@
 package
 {
 	import flash.display.Sprite;
+	import flash.text.TextField;
 	
 	import list_simple.SimpleRenderer;
 	
 	public class Renderer extends SimpleRenderer
 	{
-		private const WIDTH:Number = 250;
+		private const WIDTH:Number = 125;
 		private const HEIGHT:Number = 125;
+		
+		private var textField:TextField;
 		
 		public function Renderer()
 		{
 			super();
 			draw();
+			
+			textField = new TextField();
+			addChild(textField);
 		}
 		
 		private function draw():void
@@ -34,6 +40,11 @@ package
 				nsp.graphics.endFill();
 				sp.addChild(nsp);
 			}
+		}
+		
+		override public function refreshView():void
+		{
+			textField.text = data.name;
 		}
 	}
 }

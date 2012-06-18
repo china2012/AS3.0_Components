@@ -16,12 +16,12 @@ package list_simple
 		
 		////////////////////////////////////////////////////////////////
 		// on list config change
-		private function refreshView():void
+		public function refreshView():void
 		{
 			
 		}
 		
-		private function refreshSelected():void
+		public function refreshSelected():void
 		{
 			
 		}

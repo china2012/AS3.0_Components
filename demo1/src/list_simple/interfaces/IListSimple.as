@@ -21,6 +21,10 @@ package list_simple.interfaces
 		function get rowCount():uint;
 		function set columnCount(value:uint):void;
 		function get columnCount():uint;
+		function set direction(value:String):void;
+		function get direction():String;
+		function set scrollX(value:Number):void;
+		function get scrollX():Number;
 		function set scrollY(value:Number):void;
 		function get scrollY():Number;
 	}

@@ -1,0 +1,45 @@
+package
+{
+	import fl.controls.TileList;
+	import fl.data.DataProvider;
+	
+	import flash.display.SimpleButton;
+	import flash.display.Sprite;
+	import flash.display.StageAlign;
+	import flash.display.StageScaleMode;
+	import flash.events.MouseEvent;
+	
+	import list_simple.SimpleList;
+	
+	public class demo1 extends Sprite
+	{
+		var button:SimpleButton;
+		
+		public function demo1()
+		{
+			// set stage
+			stage.align = StageAlign.TOP_LEFT;
+			stage.scaleMode = StageScaleMode.NO_SCALE;
+			
+			// show demo
+			var listSimple:SimpleList = new SimpleList();
+			listSimple.renderer = Renderer;
+			
+			var dataProvider:DataProvider = listSimple.dataProvider;
+			for (var i:int=0; i<30; i++)
+				dataProvider.addItem({name:i});
+
+			addChild(listSimple);
+			
+			button = new SimpleButton();
+			button.x = 650;
+			addChild(button);
+			button.addEventListener(MouseEvent.CLICK, onMouseClickButton);
+		}
+		
+		protected function onMouseClickButton(event:MouseEvent):void
+		{
+			
+		}
+	}
+}
