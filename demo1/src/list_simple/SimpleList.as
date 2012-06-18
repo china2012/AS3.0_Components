@@ -26,8 +26,8 @@ package list_simple
 		
 		// don't know
 		private var _renderers:Vector.<SimpleRenderer>;
-		private var _tempXRollRenderers:Vector.<SimpleList>;
-		private var _tempYRollRenderers:Vector.<SimpleList>;
+		private var _tempXRollRenderers:Vector.<SimpleRenderer>;
+		private var _tempYRollRenderers:Vector.<SimpleRenderer>;
 		private var _container:Sprite;
 		private var _containerMask:Sprite;
 		
@@ -59,8 +59,8 @@ package list_simple
 		{
 			_renderers = new Vector.<SimpleRenderer>();
 			_magicians = new Vector.<SimpleRenderer>();
-			_tempXRollRenderers = new Vector.<SimpleList>();
-			_tempYRollRenderers = new Vector.<SimpleList>();
+			_tempXRollRenderers = new Vector.<SimpleRenderer>();
+			_tempYRollRenderers = new Vector.<SimpleRenderer>();
 			_container = new Sprite();
 			_containerMask = new Sprite();
 			_container.mask = _containerMask;
@@ -340,10 +340,15 @@ package list_simple
 				return;
 			trace("==the current("+startIndex+","+endIndex+") list data has:");
 			
-			// add renderer for  _tempXRollRenderers --sort
+			// add renderer for  _tempYRollRenderers --sort
+			
 			
 			// set renderer data
-			
+			for (var i:int=0; i<_tempYRollRenderers.length; i++)
+			{
+				var dpIndex:int = startIndex + i;
+				_tempYRollRenderers[i].data = _dataProvider[dpIndex];
+			}
 		}
 		
 		private function onScrollXChange():void

@@ -1,2 +1,0 @@
-SyntaxHighlighter written by Alex Gorbatchev
-http://alexgorbatchev.com/wiki/SyntaxHighlighter
