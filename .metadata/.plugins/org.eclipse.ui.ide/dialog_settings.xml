@@ -20,15 +20,15 @@
 		<item value="org.eclipse.wst.xml_ui.feature:3.2.2.v201008170029-7H7AFUQDxumQGOpBqffOY2f1qxDZ"/>
 	</list>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
-		<item value="true" key="ShowStatusLine"/>
 		<item value="false" key="ShowDerived"/>
+		<item value="true" key="ShowStatusLine"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/demo1/src/Renderer.as&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/demo1/src/list_simple/SimpleRenderer.as&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/demo1/src/demo1.as&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/demo1/src/list_simple/interfaces/IListSimple.as&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;" key="History"/>
 		<section name="DialogBoundsSettings">
 			<item value="357" key="DIALOG_WIDTH"/>
 			<item value="187" key="DIALOG_Y_ORIGIN"/>
-			<item value="568" key="DIALOG_HEIGHT"/>
 			<item value="180" key="DIALOG_X_ORIGIN"/>
+			<item value="568" key="DIALOG_HEIGHT"/>
 			<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
 		</section>
 	</section>
@@ -39,8 +39,8 @@
 	<section name="CleanDialogSettings">
 		<item value="500" key="DIALOG_WIDTH"/>
 		<item value="272" key="DIALOG_Y_ORIGIN"/>
-		<item value="1190" key="DIALOG_X_ORIGIN"/>
 		<item value="373" key="DIALOG_HEIGHT"/>
+		<item value="1190" key="DIALOG_X_ORIGIN"/>
 		<item value="false" key="TOGGLE_SELECTED"/>
 	</section>
 </section>

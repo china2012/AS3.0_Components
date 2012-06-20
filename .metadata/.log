@@ -1040,11 +1040,16 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY org.eclipse.osgi 2 1 2012-06-17 21:22:06.254
 !MESSAGE NLS unused message: AutomaticUpdater_ResolutionOperationLabel in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+<<<<<<< HEAD
 !SESSION 2012-06-18 21:25:32.581 -----------------------------------------------
+=======
+!SESSION 2012-06-18 09:40:54.959 -----------------------------------------------
+>>>>>>> bf1b02efb243ad989caad60026b84fb3c4d593dd
 eclipse.buildId=I20100608-0911
 java.version=1.6.0_16
 java.vendor=Sun Microsystems Inc.
 BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+<<<<<<< HEAD
 Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY org.eclipse.ui 2 0 2012-06-18 21:25:37.103
@@ -1104,6 +1109,262 @@ org.eclipse.core.internal.resources.ResourceException: 缺少“demo1”的项�
 	at java.lang.ClassLoader.loadClass(Unknown Source)
 	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
 	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:107)
+=======
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data G:\github\component -clean
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:40:55.908
+!MESSAGE NLS unused message: repoMan_notExists in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:40:55.909
+!MESSAGE NLS unused message: repoMan_relativeLocation in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:40:55.910
+!MESSAGE NLS unused message: CacheManager_Neither_0_nor_1_found in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:40:55.911
+!MESSAGE NLS unused message: CacheManager_AuthenticationFaileFor_0 in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:40:55.911
+!MESSAGE NLS unused message: CacheManager_FailedCommunicationWithRepo_0 in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:40:56.028
+!MESSAGE NLS unused message: message_mirroringStatus in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:40:56.029
+!MESSAGE NLS unused message: exception_destinationNotModifiable in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:40:56.029
+!MESSAGE NLS unused message: exception_needSourceDestination in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:40:56.030
+!MESSAGE NLS unused message: exception_malformedRepoURI in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:40:56.030
+!MESSAGE NLS unused message: Mirroring_NO_MATCHING_DESCRIPTOR in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:40:56.030
+!MESSAGE NLS unused message: Mirroring_MISSING_DESCRIPTOR in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:40:56.031
+!MESSAGE NLS unused message: Mirroring_DIFFERENT_DESCRIPTOR_PROPERTY in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:40:56.031
+!MESSAGE NLS unused message: Mirroring_ValidationError in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:40:56.032
+!MESSAGE NLS unused message: Mirroring_compareAndDownload in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.ui 2 0 2012-06-18 09:41:07.132
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2012-06-18 09:41:07.132
+!MESSAGE Commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.OpenInfoCenter', categoryId='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.category.help'
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:41:08.605
+!MESSAGE NLS unused message: FileBuffer_status_ok in: org.eclipse.core.internal.filebuffers.FileBuffersMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:41:08.605
+!MESSAGE NLS unused message: DocumentInputStream_error_read in: org.eclipse.core.internal.filebuffers.FileBuffersMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:41:11.507
+!MESSAGE NLS unused message: AutomaticUpdater_ErrorCheckingUpdates in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 09:41:11.507
+!MESSAGE NLS unused message: AutomaticUpdater_ResolutionOperationLabel in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+
+!ENTRY org.eclipse.jface 2 0 2012-06-18 11:04:21.551
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-06-18 11:04:21.551
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1a2fc39)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1a2fc39)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-06-18 11:04:21.551
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@15d27f3)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@15d27f3)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 11:04:53.690
+!MESSAGE Avoiding non-existent source container Libraries while figuring out files to copy to output folder.
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.copyDependents(BuilderUtils.java:494)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexProjectBuilder.build(FlexProjectBuilder.java:393)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.build(FlexIncrementalBuilder.java:187)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:629)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY CodeModel 4 1 2012-06-18 12:08:51.076
+!MESSAGE Parsing error
+!STACK 0
+java.lang.NullPointerException
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.fillInOffsets(NodeBase.java:527)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ExpressionNode.normalize(ExpressionNode.java:66)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ExpressionNode.normalize(ExpressionNode.java:63)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.FunctionNode.setChildren(FunctionNode.java:152)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.FunctionNode.normalize(FunctionNode.java:177)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ClassNode.setChildren(ClassNode.java:224)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ClassNode.normalize(ClassNode.java:232)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.PackageNode.setChildren(PackageNode.java:106)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.postProcess(NodeBase.java:440)
+	at com.adobe.flexbuilder.codemodel.internal.parsing.BaseASTreeParser.parseFile(BaseASTreeParser.java:180)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.BaseFileHandler.parseToASTree(BaseFileHandler.java:244)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.ASFileHandler.parseFile(ASFileHandler.java:101)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.ResourceHandlerManager.parseFile(ResourceHandlerManager.java:242)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.parseFile(Project.java:1137)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.addUnsavedFile(Project.java:705)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.processDeferredFiles(Project.java:799)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.processDeferredUpdates(Project.java:771)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.getLiveTreeBaseNode(Project.java:1174)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.findFileNodeInProject(Project.java:1238)
+	at com.adobe.flexide.as.core.document.internal.BaseASModel.getBaseFileNode(BaseASModel.java:739)
+	at com.adobe.flexide.as.core.ui.outliner.OutlinerActionScriptContentProvider.getElements(OutlinerActionScriptContentProvider.java:241)
+	at org.eclipse.jface.viewers.StructuredViewer.getRawChildren(StructuredViewer.java:989)
+	at org.eclipse.jface.viewers.ColumnViewer.getRawChildren(ColumnViewer.java:703)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getRawChildren(AbstractTreeViewer.java:1332)
+	at org.eclipse.jface.viewers.TreeViewer.getRawChildren(TreeViewer.java:391)
+	at org.eclipse.jface.viewers.StructuredViewer.getFilteredChildren(StructuredViewer.java:896)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSortedChildren(AbstractTreeViewer.java:601)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$1.run(AbstractTreeViewer.java:801)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:778)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:644)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:749)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalInitializeTree(AbstractTreeViewer.java:1492)
+	at org.eclipse.jface.viewers.TreeViewer.internalInitializeTree(TreeViewer.java:833)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$5.run(AbstractTreeViewer.java:1476)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1422)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:403)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1383)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(AbstractTreeViewer.java:1469)
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:274)
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1664)
+	at com.adobe.flexide.as.core.ui.outliner.ActionScriptOutlineUpdater.updateAndPreserveSelection(ActionScriptOutlineUpdater.java:151)
+	at com.adobe.flexide.as.core.ui.outliner.ActionScriptOutlineUpdater.propertyChanged(ActionScriptOutlineUpdater.java:327)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:129)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.firePropertyChange(AbstractTextEditor.java:6181)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$3.run(AbstractTextEditor.java:433)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.execute(AbstractTextEditor.java:597)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.elementDirtyStateChanged(AbstractTextEditor.java:436)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$FileBufferListener.dirtyStateChanged(TextFileDocumentProvider.java:288)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager$3.run(TextFileBufferManager.java:706)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.fireDirtyStateChanged(TextFileBufferManager.java:704)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer$DocumentListener.documentChanged(ResourceTextFileBuffer.java:77)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged2(AbstractDocument.java:769)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:736)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:721)
+	at org.eclipse.jface.text.AbstractDocument.fireDocumentChanged(AbstractDocument.java:796)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1191)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1210)
+	at org.eclipse.jface.text.projection.ProjectionTextStore.replace(ProjectionTextStore.java:111)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1184)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1210)
+	at org.eclipse.jface.text.projection.ProjectionDocument.replace(ProjectionDocument.java:629)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.replaceTextRange(DefaultDocumentAdapter.java:248)
+	at org.eclipse.swt.custom.StyledText.modifyContent(StyledText.java:7172)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(StyledText.java:7986)
+	at org.eclipse.swt.custom.StyledText.doBackspace(StyledText.java:2245)
+	at org.eclipse.swt.custom.StyledText.invokeAction(StyledText.java:6980)
+	at org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:5936)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5962)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(StyledText.java:5656)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1099)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1508)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4268)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4160)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4873)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2459)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3655)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+>>>>>>> bf1b02efb243ad989caad60026b84fb3c4d593dd
 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
@@ -1116,6 +1377,7 @@ org.eclipse.core.internal.resources.ResourceException: 缺少“demo1”的项�
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+<<<<<<< HEAD
 !SUBENTRY 2 org.eclipse.core.resources 4 567 2012-06-20 20:14:03.058
 !MESSAGE 缺少“demo1”的项目描述文件 (.project)。此文件包含有关项目的重要信息。项目将在复原此文件之后才能正常工作。
 
@@ -1135,3 +1397,767 @@ org.eclipse.core.internal.resources.ResourceException: 缺少“demo1”的项�
 
 !ENTRY org.eclipse.osgi 2 1 2012-06-20 20:14:10.569
 !MESSAGE NLS unused message: AutomaticUpdater_ResolutionOperationLabel in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+=======
+
+!ENTRY CodeModel 4 1 2012-06-18 12:14:54.087
+!MESSAGE Could not tokenize MXML and convert file
+!STACK 0
+java.io.FileNotFoundException: D:\Libraries\PushButtonLabs-PushButtonEngine-c36279f\src\com\pblabs\engine\mxml (拒绝访问。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.adobe.flexbuilder.codemodel.internal.project.FileSpecification.createReader(FileSpecification.java:131)
+	at com.adobe.flexbuilder.codemodel.internal.search.MXMLSearchDataProvider.getTokenData(MXMLSearchDataProvider.java:102)
+	at com.adobe.flexbuilder.codemodel.internal.search.BaseSearchDataProvider.indexFile(BaseSearchDataProvider.java:148)
+	at com.adobe.flexbuilder.codemodel.internal.search.BaseSearchDataProvider.processDeferredFiles(BaseSearchDataProvider.java:411)
+	at com.adobe.flexbuilder.codemodel.internal.search.BaseSearchDataProvider.getIndexedFileCount(BaseSearchDataProvider.java:345)
+	at com.adobe.flexbuilder.codemodel.internal.indices.SearchIndexGateway.getOccurrencesInternal(SearchIndexGateway.java:184)
+	at com.adobe.flexbuilder.codemodel.internal.indices.SearchIndexGateway.getOccurrences(SearchIndexGateway.java:166)
+	at com.adobe.flexbuilder.codemodel.internal.indices.SearchIndexGateway.getOccurrences(SearchIndexGateway.java:128)
+	at com.adobe.flexide.as.core.search.CallHierarchyProcessor.getCallHierarchy(CallHierarchyProcessor.java:347)
+	at com.adobe.flexbuilder.as.editor.ui.views.CallHierarchyView$9.run(CallHierarchyView.java:716)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY CodeModel 4 1 2012-06-18 12:14:54.092
+!MESSAGE Could not tokenize MXML and convert file
+!STACK 0
+java.io.FileNotFoundException: D:\Libraries\assql\asSQL_Flex\src\com\maclema\mysql\mxml (拒绝访问。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.adobe.flexbuilder.codemodel.internal.project.FileSpecification.createReader(FileSpecification.java:131)
+	at com.adobe.flexbuilder.codemodel.internal.search.MXMLSearchDataProvider.getTokenData(MXMLSearchDataProvider.java:102)
+	at com.adobe.flexbuilder.codemodel.internal.search.BaseSearchDataProvider.indexFile(BaseSearchDataProvider.java:148)
+	at com.adobe.flexbuilder.codemodel.internal.search.BaseSearchDataProvider.processDeferredFiles(BaseSearchDataProvider.java:411)
+	at com.adobe.flexbuilder.codemodel.internal.search.BaseSearchDataProvider.getIndexedFileCount(BaseSearchDataProvider.java:345)
+	at com.adobe.flexbuilder.codemodel.internal.indices.SearchIndexGateway.getOccurrencesInternal(SearchIndexGateway.java:184)
+	at com.adobe.flexbuilder.codemodel.internal.indices.SearchIndexGateway.getOccurrences(SearchIndexGateway.java:166)
+	at com.adobe.flexbuilder.codemodel.internal.indices.SearchIndexGateway.getOccurrences(SearchIndexGateway.java:128)
+	at com.adobe.flexide.as.core.search.CallHierarchyProcessor.getCallHierarchy(CallHierarchyProcessor.java:347)
+	at com.adobe.flexbuilder.as.editor.ui.views.CallHierarchyView$9.run(CallHierarchyView.java:716)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY CodeModel 4 1 2012-06-18 12:14:54.194
+!MESSAGE Could not tokenize MXML and convert file
+!STACK 0
+java.io.FileNotFoundException: D:\Libraries\assql\asSQL_Flex\src\com\maclema\mysql\mxml (拒绝访问。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.adobe.flexbuilder.codemodel.internal.project.FileSpecification.createReader(FileSpecification.java:131)
+	at com.adobe.flexbuilder.codemodel.internal.search.CSSSearchDataProvider.getTokenData(CSSSearchDataProvider.java:131)
+	at com.adobe.flexbuilder.codemodel.internal.search.BaseSearchDataProvider.indexFile(BaseSearchDataProvider.java:148)
+	at com.adobe.flexbuilder.codemodel.internal.search.BaseSearchDataProvider.processDeferredFiles(BaseSearchDataProvider.java:411)
+	at com.adobe.flexbuilder.codemodel.internal.search.BaseSearchDataProvider.getIndexedFileCount(BaseSearchDataProvider.java:345)
+	at com.adobe.flexbuilder.codemodel.internal.indices.SearchIndexGateway.getOccurrencesInternal(SearchIndexGateway.java:184)
+	at com.adobe.flexbuilder.codemodel.internal.indices.SearchIndexGateway.getOccurrences(SearchIndexGateway.java:166)
+	at com.adobe.flexbuilder.codemodel.internal.indices.SearchIndexGateway.getOccurrences(SearchIndexGateway.java:128)
+	at com.adobe.flexide.as.core.search.CallHierarchyProcessor.getCallHierarchy(CallHierarchyProcessor.java:347)
+	at com.adobe.flexbuilder.as.editor.ui.views.CallHierarchyView$9.run(CallHierarchyView.java:716)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY CodeModel 4 1 2012-06-18 12:14:54.233
+!MESSAGE Could not tokenize MXML and convert file
+!STACK 0
+java.io.FileNotFoundException: D:\Libraries\PushButtonLabs-PushButtonEngine-c36279f\src\com\pblabs\engine\mxml (拒绝访问。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.adobe.flexbuilder.codemodel.internal.project.FileSpecification.createReader(FileSpecification.java:131)
+	at com.adobe.flexbuilder.codemodel.internal.search.CSSSearchDataProvider.getTokenData(CSSSearchDataProvider.java:131)
+	at com.adobe.flexbuilder.codemodel.internal.search.BaseSearchDataProvider.indexFile(BaseSearchDataProvider.java:148)
+	at com.adobe.flexbuilder.codemodel.internal.search.BaseSearchDataProvider.processDeferredFiles(BaseSearchDataProvider.java:411)
+	at com.adobe.flexbuilder.codemodel.internal.search.BaseSearchDataProvider.getIndexedFileCount(BaseSearchDataProvider.java:345)
+	at com.adobe.flexbuilder.codemodel.internal.indices.SearchIndexGateway.getOccurrencesInternal(SearchIndexGateway.java:184)
+	at com.adobe.flexbuilder.codemodel.internal.indices.SearchIndexGateway.getOccurrences(SearchIndexGateway.java:166)
+	at com.adobe.flexbuilder.codemodel.internal.indices.SearchIndexGateway.getOccurrences(SearchIndexGateway.java:128)
+	at com.adobe.flexide.as.core.search.CallHierarchyProcessor.getCallHierarchy(CallHierarchyProcessor.java:347)
+	at com.adobe.flexbuilder.as.editor.ui.views.CallHierarchyView$9.run(CallHierarchyView.java:716)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:06.956
+!MESSAGE NLS unused message: RefactoringHistoryWizard_no_refactorings_error in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:06.957
+!MESSAGE NLS unused message: RefactoringHistoryWizard_no_refactorings_message in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:06.957
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_label_country in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:06.957
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_label_language in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:06.957
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_this_month_format in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:06.957
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_last_month_format in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:06.957
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_label_variant in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:06.958
+!MESSAGE NLS unused message: RefactoringHistoryLabelProvider_month_format in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:06.958
+!MESSAGE NLS unused message: RefactoringHistoryOverviewPage_description in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:06.958
+!MESSAGE NLS unused message: ShowRefactoringHistoryControl_edit_label in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:06.958
+!MESSAGE NLS unused message: RefactoringPropertyPage_confirm_delete_pattern in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:06.958
+!MESSAGE NLS unused message: RefactoringPropertyPage_edit_caption in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:06.959
+!MESSAGE NLS unused message: RefactoringPropertyPage_edit_message in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:06.959
+!MESSAGE NLS unused message: DeleteResourcesWizard_outOfSync in: org.eclipse.ltk.internal.ui.refactoring.RefactoringUIMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:08.170
+!MESSAGE NLS unused message: TextChanges_error_unsaved_changes in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:08.170
+!MESSAGE NLS unused message: ParticipantDescriptor_correct in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:08.171
+!MESSAGE NLS unused message: UnknownRefactoringDescriptor_initialization_error in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:08.171
+!MESSAGE NLS unused message: DeleteFileOrFolderChange_deleting in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:08.171
+!MESSAGE NLS unused message: DeleteFileOrFolderChange_name in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 12:34:08.171
+!MESSAGE NLS unused message: MoveResourceChange_error_destination_already_exists in: org.eclipse.ltk.internal.core.refactoring.RefactoringCoreMessages
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 13:03:31.690
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 13:03:32.441
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 13:03:33.191
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 13:03:33.953
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 13:03:34.704
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 13:03:35.454
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 13:03:36.204
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 13:03:36.600
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 13:25:44.930
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 14:56:36.989
+!MESSAGE Error instantiating breakpoint
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: 找不到标记 ID 439。
+	at org.eclipse.core.internal.resources.Marker.checkInfo(Marker.java:56)
+	at org.eclipse.core.internal.resources.Marker.setAttribute(Marker.java:236)
+	at org.eclipse.core.internal.resources.Marker.setAttribute(Marker.java:222)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:497)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 376 2012-06-18 14:56:36.990
+!MESSAGE 找不到标记 ID 439。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 14:56:37.065
+!MESSAGE Error instantiating breakpoint
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:119)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.addInstantiationStatus(FlexBreakpoint.java:104)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.setBreakpointError(FlexBreakpointMap.java:161)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:513)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-18 14:56:37.065
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 14:56:37.066
+!MESSAGE Error instantiating breakpoint
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:119)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.addInstantiationStatus(FlexBreakpoint.java:104)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.setBreakpointError(FlexBreakpointMap.java:161)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:513)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-18 14:56:37.066
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 14:56:37.066
+!MESSAGE Error instantiating breakpoint
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:119)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.addInstantiationStatus(FlexBreakpoint.java:104)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.setBreakpointError(FlexBreakpointMap.java:161)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:513)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-18 14:56:37.066
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 16:03:29.798
+!MESSAGE Avoiding non-existent source container ${DOCUMENTS}/Libraries while figuring out files to copy to output folder.
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.copyDependents(BuilderUtils.java:494)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexProjectBuilder.build(FlexProjectBuilder.java:393)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.build(FlexIncrementalBuilder.java:187)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:629)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 16:06:11.103
+!MESSAGE Avoiding non-existent source container Libraries while figuring out files to copy to output folder.
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.copyDependents(BuilderUtils.java:494)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexProjectBuilder.build(FlexProjectBuilder.java:393)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.build(FlexIncrementalBuilder.java:187)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:629)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 16:08:10.616
+!MESSAGE Error instantiating breakpoint
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:119)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.addInstantiationStatus(FlexBreakpoint.java:104)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.setBreakpointLocations(FlexBreakpointMap.java:101)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:507)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-18 16:08:10.616
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:11:36.505
+!MESSAGE 断点没有相关联的标记。
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.updateMessageAttribute(FlexBreakpoint.java:188)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:142)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.removeInstantiationStatus(FlexBreakpoint.java:114)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.clearBreakpointLocations(FlexBreakpointMap.java:122)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.uninstantiate(FlexLineBreakpoint.java:557)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.uninstantiateBreakpoint(FlexDebugTarget.java:1054)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$12(FlexDebugTarget.java:1051)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$2.run(FlexDebugTarget.java:1092)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-18 17:11:36.505
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:14:19.898
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:14:20.658
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:14:21.409
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:14:22.160
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:29.759
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:30.557
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:31.321
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:32.101
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:32.866
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:33.630
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:33.630
+!MESSAGE Error instantiating breakpoint
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:119)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.addInstantiationStatus(FlexBreakpoint.java:104)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.setBreakpointError(FlexBreakpointMap.java:161)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:513)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-18 17:29:33.630
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:33.630
+!MESSAGE Error instantiating breakpoint
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:119)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.addInstantiationStatus(FlexBreakpoint.java:104)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.setBreakpointError(FlexBreakpointMap.java:161)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:513)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-18 17:29:33.630
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:33.630
+!MESSAGE Error instantiating breakpoint
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:119)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.addInstantiationStatus(FlexBreakpoint.java:104)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.setBreakpointError(FlexBreakpointMap.java:161)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:513)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-18 17:29:33.630
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 17:29:33.630
+!MESSAGE Error instantiating breakpoint
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:119)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.addInstantiationStatus(FlexBreakpoint.java:104)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.setBreakpointError(FlexBreakpointMap.java:161)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:513)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$1.run(FlexDebugTarget.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2012-06-18 17:29:33.630
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:29.212
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:29.963
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:30.714
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:31.476
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:32.226
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:32.978
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:33.728
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:34.621
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:35.374
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2012-06-18 18:32:36.124
+!MESSAGE Error instantiating breakpoint
+!STACK 0
+flash.tools.debugger.NoResponseException: 等待来自 Flash Player 的调试响应达 750 毫秒时发生超时
+	at flash.tools.debugger.concrete.PlayerSession.setBreakpoint(PlayerSession.java:913)
+	at flash.tools.debugger.threadsafe.ThreadSafeSession.setBreakpoint(ThreadSafeSession.java:184)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.instantiate(FlexLineBreakpoint.java:490)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.instantiateBreakpoint(FlexDebugTarget.java:1032)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$4(FlexDebugTarget.java:1026)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$3.run(FlexDebugTarget.java:1140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2012-06-18 19:08:42.653
+!MESSAGE Error during shutdown
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: null argument:
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:85)
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:73)
+	at org.eclipse.core.internal.events.ResourceChangeListenerList.remove(ResourceChangeListenerList.java:146)
+	at org.eclipse.core.internal.events.NotificationManager.removeListener(NotificationManager.java:305)
+	at org.eclipse.core.internal.resources.Workspace.removeResourceChangeListener(Workspace.java:1934)
+	at org.eclipse.wst.server.core.internal.ResourceManager.shutdownImpl(ResourceManager.java:367)
+	at org.eclipse.wst.server.core.internal.ResourceManager.shutdown(ResourceManager.java:313)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.stop(ServerPlugin.java:360)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:843)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:836)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:501)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:550)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1097)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:597)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:266)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:690)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:588)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:415)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+!SESSION 2012-06-18 19:12:07.360 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 19:12:08.660
+!MESSAGE NLS unused message: repoMan_notExists in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 19:12:08.660
+!MESSAGE NLS unused message: repoMan_relativeLocation in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 19:12:08.660
+!MESSAGE NLS unused message: CacheManager_Neither_0_nor_1_found in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 19:12:08.660
+!MESSAGE NLS unused message: CacheManager_AuthenticationFaileFor_0 in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 19:12:08.660
+!MESSAGE NLS unused message: CacheManager_FailedCommunicationWithRepo_0 in: org.eclipse.equinox.internal.p2.metadata.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 19:12:08.780
+!MESSAGE NLS unused message: message_mirroringStatus in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 19:12:08.780
+!MESSAGE NLS unused message: exception_destinationNotModifiable in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 19:12:08.780
+!MESSAGE NLS unused message: exception_needSourceDestination in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 19:12:08.780
+!MESSAGE NLS unused message: exception_malformedRepoURI in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 19:12:08.780
+!MESSAGE NLS unused message: Mirroring_NO_MATCHING_DESCRIPTOR in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 19:12:08.780
+!MESSAGE NLS unused message: Mirroring_MISSING_DESCRIPTOR in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 19:12:08.790
+!MESSAGE NLS unused message: Mirroring_DIFFERENT_DESCRIPTOR_PROPERTY in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 19:12:08.790
+!MESSAGE NLS unused message: Mirroring_ValidationError in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-06-18 19:12:08.790
+!MESSAGE NLS unused message: Mirroring_compareAndDownload in: org.eclipse.equinox.internal.p2.artifact.repository.messages
+>>>>>>> bf1b02efb243ad989caad60026b84fb3c4d593dd

@@ -3,28 +3,32 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="251" key="DIALOG_WIDTH"/>
 		<item value="262" key="DIALOG_Y_ORIGIN"/>
-		<item value="843" key="DIALOG_X_ORIGIN"/>
 		<item value="399" key="DIALOG_HEIGHT"/>
-		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|微软雅黑" key="DIALOG_FONT_NAME"/>
+		<item value="843" key="DIALOG_X_ORIGIN"/>
+		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="_containerMask" key="selection"/>
+		<item value="(_container.y - _containerMask.y) / rowHeight" key="selection"/>
 		<list key="findhistory">
-			<item value="_containerMask"/>
-			<item value="Renderer"/>
-			<item value="var d:Renderer"/>
-			<item value="set renderer"/>
-			<item value="renderer"/>
-			<item value="_renderer"/>
-			<item value="rowHeight"/>
-			<item value="_cellRenderer"/>
+			<item value="(_container.y - _containerMask.y) / rowHeight"/>
+			<item value="_renderersMagician"/>
+			<item value="_renderersSort"/>
+			<item value="_magicians"/>
+			<item value="_tempSortRenderers"/>
+			<item value="_dataProvider"/>
+			<item value="_tempYRollRenderers"/>
+			<item value="_tempXRollRenderers"/>
 		</list>
 		<list key="replacehistory">
 		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="390" key="DIALOG_Y_ORIGIN"/>
+		<item value="729" key="DIALOG_X_ORIGIN"/>
 	</section>
 </section>
