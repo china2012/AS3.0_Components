@@ -4,4 +4,17 @@
 		<item value="105" key="DIALOG_Y_ORIGIN"/>
 		<item value="208" key="DIALOG_X_ORIGIN"/>
 	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.wst.xml.ui.internal.wizards.NewXMLWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.adobe.flexbuilder.project.ui.wizards.newWizards"/>
+			<item value="org.eclipse.wst.XMLCategory"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+		<item value="com.adobe.flexbuilder.exportimport.importWizards.ImportWizard" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="com.adobe.flexbuilder.importartwork.ui.importWizards.flex"/>
+		</list>
+	</section>
 </section>
