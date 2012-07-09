@@ -1,0 +1,16 @@
+package com.sloader.define
+{
+	public class SLoaderFileErrorInfo
+	{
+		public static const E2562:String = "E2562:错误1";
+		
+		public function SLoaderFileErrorInfo()
+		{
+		}
+		
+		public static function getName():String
+		{
+			
+		}
+	}
+}

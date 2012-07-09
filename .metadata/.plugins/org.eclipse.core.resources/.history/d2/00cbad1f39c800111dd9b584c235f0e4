@@ -1,0 +1,10 @@
+package com.sloader
+{
+	public class SLoaderFileLoadVO
+	{
+		public var completed:Boolean;
+		public function SLoaderFileLoadVO()
+		{
+		}
+	}
+}

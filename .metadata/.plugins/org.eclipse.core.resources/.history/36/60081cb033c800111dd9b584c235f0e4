@@ -1,0 +1,13 @@
+package com.sloader.event
+{
+	public class SLoaderEventType
+	{
+		public static const FILE_START:String = "file_start";
+		
+		public static const FILE_COMPLETE:String = "file_complete";
+		
+		public function SLoaderEventType()
+		{
+		}
+	}
+}

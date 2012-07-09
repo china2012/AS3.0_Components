@@ -1,0 +1,10 @@
+package com.sloader
+{
+	public class SLoaderFiles
+	{
+		
+		public function SLoaderFiles()
+		{
+		}
+	}
+}

@@ -1,0 +1,48 @@
+package
+{
+	import com.hydrotik.queueloader.QueueLoader;
+	import com.hydrotik.queueloader.QueueLoaderEvent;
+	
+	import flash.display.Loader;
+	import flash.display.Sprite;
+	import flash.events.Event;
+	import flash.net.URLRequest;
+	import flash.system.ApplicationDomain;
+	import flash.system.LoaderContext;
+	import flash.system.SecurityDomain;
+	
+	import org.osmf.events.LoaderEvent;
+	
+	public class demo2 extends Sprite
+	{
+		private var loader:Loader;
+		private var domain1:ApplicationDomain;
+		
+		private var qloader:QueueLoader;
+		
+		public function demo2()
+		{
+			var str:String = "http://www.baidu.com/ss/gg/sad/221.sssspkg.mp3";
+			var arr:Array = str.match(/?>\.[^\.]*/);
+			trace(arr);
+			if (arr)
+				trace(arr.length);
+//			var loadContext:LoaderContext = new LoaderContext(false, ApplicationDomain.currentDomain, 
+//				SecurityDomain.currentDomain);
+//			
+//			qloader = new QueueLoader(false, loadContext, true, "qloader");
+//			qloader.addEventListener(QueueLoaderEvent.QUEUE_PROGRESS, onQueueProgress);
+//			
+//			for (var i:int=0; i<2; i++)
+//			{
+//				qloader.addItem("http://localhost/demos/demo3/1/2.swf",null, null);
+//			}
+//			qloader.execute();
+		}
+		
+//		protected function onQueueProgress(event:QueueLoaderEvent):void
+//		{
+//			trace(event.queuepercentage);
+//		}
+	}
+}

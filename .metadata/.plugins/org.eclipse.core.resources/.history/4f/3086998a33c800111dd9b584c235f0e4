@@ -1,0 +1,9 @@
+package com.sloader.event
+{
+	public class SLoaderEventType
+	{
+		public function SLoaderEventType()
+		{
+		}
+	}
+}

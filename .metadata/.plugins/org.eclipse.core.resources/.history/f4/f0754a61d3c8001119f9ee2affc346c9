@@ -1,0 +1,14 @@
+package com.sloader.filehandler
+{
+	public class LoadHandler
+	{
+		public var _eventHandlerOnFileComplete:Function = null;
+		public var _eventHandlerOnFileProgress:Function = null;
+		public var _eventHandlerOnFileStart:Function = null;
+		public var _eventHandlerOnFileIoError:Function = null;
+		
+		public function LoadHandler()
+		{
+		}
+	}
+}

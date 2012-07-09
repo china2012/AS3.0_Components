@@ -1,0 +1,9 @@
+package com.sloader
+{
+	public class SLoaderFilesHistory
+	{
+		public var completed:Boolean;
+		public var currBytes:Number;
+		public var totalBytes:Number;
+	}
+}

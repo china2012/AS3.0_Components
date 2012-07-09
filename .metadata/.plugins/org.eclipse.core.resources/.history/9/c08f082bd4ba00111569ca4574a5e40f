@@ -1,0 +1,16 @@
+package
+{
+	import flash.display.Sprite;
+	
+	import mx.controls.List;
+	
+	public class demo1 extends Sprite
+	{
+		var list:lis;
+		
+		public function demo1()
+		{
+			
+		}
+	}
+}

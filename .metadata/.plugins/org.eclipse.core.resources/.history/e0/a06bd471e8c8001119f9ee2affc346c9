@@ -1,0 +1,9 @@
+package com.sloader.define
+{
+	public class SLoaderFileError
+	{
+		public function SLoaderFileError()
+		{
+		}
+	}
+}

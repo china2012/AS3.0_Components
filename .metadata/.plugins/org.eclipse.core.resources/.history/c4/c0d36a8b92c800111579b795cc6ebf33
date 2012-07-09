@@ -1,0 +1,11 @@
+package com.sloader
+{
+	public class SLoaderFiles
+	{
+		public var doneFileCount:int;
+		
+		public function SLoaderFiles()
+		{
+		}
+	}
+}

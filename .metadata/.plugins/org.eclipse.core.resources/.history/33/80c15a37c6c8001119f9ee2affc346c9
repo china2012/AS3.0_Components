@@ -1,0 +1,11 @@
+package com.sloader.commin
+{
+	public class SLoaderFilesLoaderInfo
+	{
+		public var doneFileCount:int;
+		public var totalFileCount:int;
+		
+		public var doneBytes:int;
+		public var totalBytes:int;
+	}
+}

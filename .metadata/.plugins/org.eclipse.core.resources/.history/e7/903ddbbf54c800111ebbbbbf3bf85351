@@ -1,0 +1,7 @@
+package com.sloader.loadhandler
+{
+	public interface XXX
+	{
+		public function load();
+	}
+}

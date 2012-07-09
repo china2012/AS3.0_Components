@@ -1,0 +1,14 @@
+package com.sloader.handlers
+{
+	import com.sloader.define.SLoaderFileVO;
+	
+	import flash.system.ApplicationDomain;
+	
+	public class fffff extends LoadHandler
+	{
+		public function fffff(fileVO:SLoaderFileVO, domain:ApplicationDomain)
+		{
+			super(fileVO, domain);
+		}
+	}
+}

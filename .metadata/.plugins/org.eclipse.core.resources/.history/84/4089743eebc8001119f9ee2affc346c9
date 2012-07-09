@@ -1,0 +1,62 @@
+package
+{
+	import com.sloader.SLoader;
+	import com.sloader.define.SLoaderEventType;
+	import com.sloader.define.SLoaderFileError;
+	import com.sloader.define.SLoaderFileVO;
+	
+	import flash.display.Sprite;
+	import flash.net.URLLoader;
+	import flash.system.SecurityDomain;
+	import flash.utils.setTimeout;
+	
+	public class demo3 extends Sprite
+	{
+		private var sloader:SLoader;
+		
+		public function demo3()
+		{
+			sloader = new SLoader();
+			sloader.addEventListener(SLoaderEventType.FILE_COMPLETE, onConfigDataComplete);
+			
+			var fileVO:SLoaderFileVO = new SLoaderFileVO();
+			fileVO.name = "config";
+			fileVO.title = "config";
+			fileVO.url = "NewFile.xml";
+			sloader.addFile(fileVO);
+			sloader.execute();
+		}
+		
+		private function onConfigDataComplete(file:SLoaderFileVO):void
+		{
+			if (file.name == "config")
+			{
+				sloader.removeEventListener(SLoaderEventType.FILE_COMPLETE, onConfigDataComplete);
+				var config:XML = new XML((file.loaderInfo.loader as URLLoader).data);
+				
+				var files:Array = [];
+				sloader.addEventListener(SLoaderEventType.FILE_COMPLETE, onFileComplete);
+				sloader.addEventListener(SLoaderEventType.FILE_ERROR, onFileError);
+				for each(var item:XML in config.files.item)
+				{
+					var fileVO:SLoaderFileVO = new SLoaderFileVO();
+					fileVO.name = item.@name;
+					fileVO.title = item.@title;
+					fileVO.url = item.@url;
+					sloader.addFile(files);
+				}
+				sloader.execute();
+			}
+		}
+		
+		private function onFileComplete(fileVO:SLoaderFileVO):void
+		{
+			trace("file complete:"+fileVO.name);
+		}
+		
+		private function onFileError(sloaderError:SLoaderFileError):void
+		{
+			trace(sloaderError.file.name+"["+sloaderError.file.url+"]---加载失败...");
+		}
+	}
+}

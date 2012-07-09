@@ -1,0 +1,69 @@
+package com.sloader.loadhandler
+{
+	import com.sloader.SLoaderFile;
+	
+	import flash.events.Event;
+	import flash.events.ProgressEvent;
+	import flash.net.URLLoader;
+	import flash.net.URLRequest;
+
+	public class XML_LoadHandler implements ILoadHandler
+	{
+		private var _file:SLoaderFile;
+		
+		private var _fileStartHandler:Function;
+		private var fileProgressHandler:Function;
+		private var fileCompleteHandler:Function;
+		
+		public function XML_LoadHandler(currfile:SLoaderFile)
+		{
+			_file = currfile;
+			_file.loader = new URLLoader();
+			_file.loader.addEventListener(ProgressEvent.PROGRESS, onFileProgress);
+			_file.loader.addEventListener(Event.COMPLETE, onFileComplete);
+		}
+		
+		protected function onFileComplete(event:Event):void
+		{
+			if (fileCompleteHandler)
+				fileCompleteHandler(_file);
+		}
+		
+		protected function onFileProgress(event:ProgressEvent):void
+		{
+			if (fileProgressHandler)
+				fileProgressHandler();
+		}
+		
+		protected function onFileStart():void
+		{
+			if (_fileStartHandler)
+				_fileStartHandler(_file);
+		}
+		
+		////////////////////////////////////////////////////////////
+		// Implements
+		public function load():void
+		{
+			onFileStart();
+			
+			var urlRequest:URLRequest = new URLRequest(_file.url);
+			_file.loader.load(urlRequest);
+		}
+		
+		public function setFileStartEventHandler():void
+		{
+			
+		}
+		
+		public function setFileProgressEventHandler():void
+		{
+			
+		}
+		
+		public function setFileCompleteEventHandler():void
+		{
+			
+		}
+	}
+}

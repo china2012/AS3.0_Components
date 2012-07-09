@@ -1,0 +1,12 @@
+package com.sloader.define
+{
+	public class SLoaderFileVO
+	{
+		public var title:String;		// *
+		public var name:String;		// *
+		public var url:String;			// *
+		public var type:String;
+		
+		public var loaderInfo:SLoaderFileInfoVO;
+	}
+}

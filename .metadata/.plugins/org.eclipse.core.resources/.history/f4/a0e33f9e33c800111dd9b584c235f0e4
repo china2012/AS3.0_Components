@@ -1,0 +1,10 @@
+package com.sloader.event
+{
+	public class SLoaderEventType
+	{
+		public static const FILE_COMPLETE:String = "file_complete";
+		public function SLoaderEventType()
+		{
+		}
+	}
+}

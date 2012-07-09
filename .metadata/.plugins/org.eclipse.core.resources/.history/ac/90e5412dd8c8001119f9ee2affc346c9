@@ -1,0 +1,7 @@
+package com.sloader.handlers
+{
+	public interface ILoadHandler
+	{
+		function load():void;
+	}
+}

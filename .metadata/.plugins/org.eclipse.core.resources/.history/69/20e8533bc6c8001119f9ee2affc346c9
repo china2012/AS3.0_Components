@@ -1,0 +1,80 @@
+package com.sloader.loadhandler
+{
+	import com.sloader.cation.SLoaderFileLoaderInfo;
+	import com.sloader.cation.SLoaderFileVO;
+	
+	import flash.display.Loader;
+	import flash.events.Event;
+	import flash.events.IOErrorEvent;
+	import flash.events.ProgressEvent;
+	import flash.net.URLRequest;
+
+	public class SWF_LoadHandler implements ILoadHandler
+	{
+		private var _file:SLoaderFileVO;
+		
+		public function SWF_LoadHandler(currfile:SLoaderFileVO)
+		{
+			_file = currfile;
+			_file.loaderInfo = new SLoaderFileLoaderInfo();
+			_file.loaderInfo.loader = new Loader();
+			_file.loaderInfo.loader.contentLoaderInfo.addEventListener(ProgressEvent.PROGRESS, onFileProgress);
+			_file.loaderInfo.loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onFileComplete);
+			_file.loaderInfo.loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, onFileIoError);
+		}
+		
+		protected function onFileIoError(event:IOErrorEvent):void
+		{
+			if (_eventHandlerOnFileIoError != null)
+				_eventHandlerOnFileIoError(_file);
+		}
+		
+		protected function onFileComplete(event:Event):void
+		{
+			if (_eventHandlerOnFileComplete != null)
+				_eventHandlerOnFileComplete(_file);
+		}
+		
+		protected function onFileProgress(event:ProgressEvent):void
+		{
+			if (_eventHandlerOnFileProgress != null)
+				_eventHandlerOnFileProgress(_file);
+		}
+		
+		protected function onFileStart():void
+		{
+			if (_eventHandlerOnFileStart != null)
+				_eventHandlerOnFileStart(_file);
+		}
+		
+		////////////////////////////////////////////////////////////
+		// Implements
+		public var _eventHandlerOnFileComplete:Function = null;
+		public var _eventHandlerOnFileProgress:Function = null;
+		public var _eventHandlerOnFileStart:Function = null;
+		public var _eventHandlerOnFileIoError:Function = null;
+		
+		public function load():void
+		{
+			onFileStart();
+			
+			var urlRequest:URLRequest = new URLRequest(_file.url);
+			_file.loaderInfo.loader.load(urlRequest);
+		}
+		
+		public function setFileStartEventHandler(handler:Function):void
+		{
+			_eventHandlerOnFileComplete = handler;
+		}
+		
+		public function setFileProgressEventHandler(handler:Function):void
+		{
+			_eventHandlerOnFileProgress = handler;
+		}
+		
+		public function setFileCompleteEventHandler(handler:Function):void
+		{
+			_eventHandlerOnFileStart = handler;
+		}
+	}
+}

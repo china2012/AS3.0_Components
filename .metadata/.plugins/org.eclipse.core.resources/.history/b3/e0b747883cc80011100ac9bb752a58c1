@@ -1,0 +1,11 @@
+package com.sloader
+{
+	public class SLoaderFilesHistory
+	{
+		public var file:SLoaderFile;
+		public var time_addFile:String;//...
+		public var time_removeFile:String;//...
+		public var time_fileStart:String;
+		public var time_fileComplete:String;
+	}
+}

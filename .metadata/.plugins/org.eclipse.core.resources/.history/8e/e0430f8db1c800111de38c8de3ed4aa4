@@ -1,0 +1,15 @@
+package com.sloader.loadhandler
+{
+	public class sdaasd implements ILoadHandler
+	{
+		public function sdaasd()
+		{
+		}
+		
+		public function load():void
+		{
+		}
+		
+		
+	}
+}

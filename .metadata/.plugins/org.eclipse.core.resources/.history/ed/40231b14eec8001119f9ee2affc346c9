@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<version>0.0.2</version>
+		<date>2012-4-27</date>
+		<host>192.168.111.101</host>
+		<port>8201</port>
+		<user>mazha2</user>
+		<key>mazha2</key>
+	</config>
+	
+	<files>
+		<item title="createrole" url="assets/modules/create_role.swf" version="0.0.2" name="副本关卡信息界面" />
+		<item title="fbinfo" url="assets/modules/fbinfo.swf" version="0.0.2" name="副本关卡信息界面" />
+		<item title="fblist" url="assets/modules/fblist.swf" version="0.0.2" name="副本关卡选择列表" />
+		<item title="fbscene" url="assets/modules/fbscene.swf" version="0.0.2" name="副本场景" />
+		<item title="mainscene" url="assets/modules/main_scene.swf" version="0.0.2" name="主界面场景" />
+		<item title="mainui" url="assets/modules/main_ui.swf" version="0.0.2" name="主界面元素" />
+		<item title="task" url="assets/modules/task.swf" version="0.0.2" name="任务模块" lazyload="true" />
+		<item title="userinfo" url="assets/modules/userinfo.swf" version="0.0.2" name="玩家信息模块" lazyload="true" />
+		<item title="zhen" url="assets/modules/zhen.swf" version="0.0.2" name="阵型模块" lazyload="true" />
+		<item title="hero" url="assets/modules/generals.swf" version="0.0.2" name="英雄信息模块" lazyload="true" />
+		<item title="train" url="assets/modules/train.swf" version="0.0.2" name="英雄培养" lazyload="true" />
+		<item title="liandan" url="assets/modules/liandan.swf" version="0.0.2" name="炼丹界面" lazyload="true" />
+		<item title="tech" url="assets/modules/technology.swf" version="0.0.2" name="科技界面" lazyload="true" />
+		<item title="yuandan" url="assets/modules/yuandan.swf" version="0.0.2" name="元丹界面" lazyload="true" />
+		<item title="mail" url="assets/modules/mail.swf" version="0.0.2" name="信件界面" lazyload="true" />
+		
+		<item title="fight" url="assets/modules/fight.swf" version="0.0.2" name="临时战斗窗口" />
+		<item title="loading" url="assets/modules/loading.swf" version="0.0.2" name="进度条模块" />
+				<item title="createrole" url="assets/modules/create_role.swf" version="0.0.2" name="副本关卡信息界面" />
+		<item title="fbinfo" url="assets/modules/fbinfo.swf" version="0.0.2" name="副本关卡信息界面" />
+		<item title="fblist" url="assets/modules/fblist.swf" version="0.0.2" name="副本关卡选择列表" />
+		<item title="fbscene" url="assets/modules/fbscene.swf" version="0.0.2" name="副本场景" />
+		<item title="mainscene" url="assets/modules/main_scene.swf" version="0.0.2" name="主界面场景" />
+		<item title="mainui" url="assets/modules/main_ui.swf" version="0.0.2" name="主界面元素" />
+		<item title="task" url="assets/modules/task.swf" version="0.0.2" name="任务模块" lazyload="true" />
+		<item title="userinfo" url="assets/modules/userinfo.swf" version="0.0.2" name="玩家信息模块" lazyload="true" />
+		<item title="zhen" url="assets/modules/zhen.swf" version="0.0.2" name="阵型模块" lazyload="true" />
+		<item title="hero" url="assets/modules/generals.swf" version="0.0.2" name="英雄信息模块" lazyload="true" />
+		<item title="train" url="assets/modules/train.swf" version="0.0.2" name="英雄培养" lazyload="true" />
+		<item title="liandan" url="assets/modules/liandan.swf" version="0.0.2" name="炼丹界面" lazyload="true" />
+		<item title="tech" url="assets/modules/technology.swf" version="0.0.2" name="科技界面" lazyload="true" />
+		<item title="yuandan" url="assets/modules/yuandan.swf" version="0.0.2" name="元丹界面" lazyload="true" />
+		<item title="mail" url="assets/modules/mail.swf" version="0.0.2" name="信件界面" lazyload="true" />
+		
+		<item title="fight" url="assets/modules/fight.swf" version="0.0.2" name="临时战斗窗口" />
+		<item title="loading" url="assets/modules/loading.swf" version="0.0.2" name="进度条模块" />
+				<item title="createrole" url="assets/modules/create_role.swf" version="0.0.2" name="副本关卡信息界面" />
+		<item title="fbinfo" url="assets/modules/fbinfo.swf" version="0.0.2" name="副本关卡信息界面" />
+		<item title="fblist" url="assets/modules/fblist.swf" version="0.0.2" name="副本关卡选择列表" />
+		<item title="fbscene" url="assets/modules/fbscene.swf" version="0.0.2" name="副本场景" />
+		<item title="mainscene" url="assets/modules/main_scene.swf" version="0.0.2" name="主界面场景" />
+		<item title="mainui" url="assets/modules/main_ui.swf" version="0.0.2" name="主界面元素" />
+		<item title="task" url="assets/modules/task.swf" version="0.0.2" name="任务模块" lazyload="true" />
+		<item title="userinfo" url="assets/modules/userinfo.swf" version="0.0.2" name="玩家信息模块" lazyload="true" />
+		<item title="zhen" url="assets/modules/zhen.swf" version="0.0.2" name="阵型模块" lazyload="true" />
+		<item title="hero" url="assets/modules/generals.swf" version="0.0.2" name="英雄信息模块" lazyload="true" />
+		<item title="train" url="assets/modules/train.swf" version="0.0.2" name="英雄培养" lazyload="true" />
+		<item title="liandan" url="assets/modules/liandan.swf" version="0.0.2" name="炼丹界面" lazyload="true" />
+		<item title="tech" url="assets/modules/technology.swf" version="0.0.2" name="科技界面" lazyload="true" />
+		<item title="yuandan" url="assets/modules/yuandan.swf" version="0.0.2" name="元丹界面" lazyload="true" />
+		<item title="mail" url="assets/modules/mail.swf" version="0.0.2" name="信件界面" lazyload="true" />
+		
+		<item title="fight" url="assets/modules/fight.swf" version="0.0.2" name="临时战斗窗口" />
+		<item title="loading" url="assets/modules/loading.swf" version="0.0.2" name="进度条模块" />
+
+		<!-- 数据配置 -->
+		<i1tem title="gamedata" url="assets/config.dat" version="0.0.1" name="游戏配置数据文件" />
+	</files>
+</root>

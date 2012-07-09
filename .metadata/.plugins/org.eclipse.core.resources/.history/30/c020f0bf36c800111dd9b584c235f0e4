@@ -1,0 +1,9 @@
+package com.sloader
+{
+	public class SLoaderFileVO
+	{
+		public function SLoaderFileVO()
+		{
+		}
+	}
+}

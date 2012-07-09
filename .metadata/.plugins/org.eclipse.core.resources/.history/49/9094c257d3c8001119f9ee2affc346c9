@@ -1,0 +1,9 @@
+package com.sloader.filehandler
+{
+	public class LoadHandler
+	{
+		public function LoadHandler()
+		{
+		}
+	}
+}

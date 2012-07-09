@@ -1,0 +1,11 @@
+package com.sloader.define
+{
+	public class SLoaderFileErrorType
+	{
+		public static const E2562:String = "E2562:错误1";
+		
+		public function SLoaderFileErrorType()
+		{
+		}
+	}
+}

@@ -1,0 +1,11 @@
+package com.sloader
+{
+	public class SLoaderFileVO
+	{
+		public var title:String;
+		
+		////////////////////////////////////
+		public var currBytes:Number;
+		public var totalBytes:Number;
+	}
+}

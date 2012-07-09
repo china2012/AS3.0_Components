@@ -1,0 +1,61 @@
+package com.sloader.handlers
+{
+	import com.sloader.define.SLoaderFileInfo;
+	import com.sloader.define.SLoaderFileVO;
+	
+	import flash.display.Loader;
+	import flash.events.Event;
+	import flash.events.IOErrorEvent;
+	import flash.events.ProgressEvent;
+	import flash.net.URLRequest;
+	import flash.system.ApplicationDomain;
+
+	public class SWF_LoadHandler extends LoadHandler implements ILoadHandler
+	{
+		private var _file:SLoaderFileVO;
+		
+		public function SWF_LoadHandler(fileVO:SLoaderFileVO, domain:ApplicationDomain)
+		{
+			_file = currfile;
+			_file.loaderInfo = new SLoaderFileInfo();
+			_file.loaderInfo.loader = new Loader();
+			_file.loaderInfo.loader.contentLoaderInfo.addEventListener(ProgressEvent.PROGRESS, onFileProgress);
+			_file.loaderInfo.loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onFileComplete);
+			_file.loaderInfo.loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, onFileIoError);
+		}
+		
+		protected function onFileIoError(event:IOErrorEvent):void
+		{
+			if (_eventHandlerOnFileIoError != null)
+				_eventHandlerOnFileIoError(_file);
+		}
+		
+		protected function onFileComplete(event:Event):void
+		{
+			if (_eventHandlerOnFileComplete != null)
+				_eventHandlerOnFileComplete(_file);
+		}
+		
+		protected function onFileProgress(event:ProgressEvent):void
+		{
+			if (_eventHandlerOnFileProgress != null)
+				_eventHandlerOnFileProgress(_file);
+		}
+		
+		protected function onFileStart():void
+		{
+			if (_eventHandlerOnFileStart != null)
+				_eventHandlerOnFileStart(_file);
+		}
+		
+		////////////////////////////////////////////////////////////
+		// Implements
+		public function load():void
+		{
+			onFileStart();
+			
+			var urlRequest:URLRequest = new URLRequest(_file.url);
+			_file.loaderInfo.loader.load(urlRequest);
+		}
+	}
+}

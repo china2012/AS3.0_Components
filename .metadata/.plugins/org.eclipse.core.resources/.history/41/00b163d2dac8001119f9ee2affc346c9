@@ -1,0 +1,25 @@
+package com.sloader.handlers
+{
+	import com.sloader.define.SLoaderFileVO;
+	
+	import flash.events.Event;
+	import flash.net.URLLoader;
+	import flash.system.ApplicationDomain;
+	
+	public class XML_LoadHandler extends LoadHandler
+	{
+		public function XML_LoadHandler(fileVO:SLoaderFileVO, domain:ApplicationDomain)
+		{
+			super(fileVO, domain);
+			var loader:URLLoader = new URLLoader();
+			fileVO.loaderInfo.loader = loader;
+			loader.addEventListener(Event.COMPLETE, onFileComplete);
+		}
+		
+		protected function onFileComplete(event:Event):void
+		{
+			// TODO Auto-generated method stub
+			
+		}
+	}
+}

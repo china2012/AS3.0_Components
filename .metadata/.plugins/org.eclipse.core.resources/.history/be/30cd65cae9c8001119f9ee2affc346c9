@@ -1,0 +1,12 @@
+package com.sloader.define
+{
+	public class SLoaderFileError
+	{
+		public var file:SLoaderFileVO;
+		public var ret:int;
+		
+		public function SLoaderFileError(fileVO:SLoaderFileVO)
+		{
+		}
+	}
+}

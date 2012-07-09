@@ -1,0 +1,10 @@
+package com.sloader.loadhandler
+{
+	public interface ILoadHandler
+	{
+		function load();
+		function setFileStartEventHandler();
+		function setFileProgressEventHandler();
+		function setFileCompleteEventHandler();
+	}
+}

@@ -1,0 +1,15 @@
+package com.sloader
+{
+	public class SLoaderFileVO
+	{
+		public var title:String;		// *
+		public var name:String;		// *
+		public var url:String;			// *
+		public var type:String;
+		
+		////////////////////////////////////
+		public var doneBytes:int;
+		public var totalBytes:int;
+		public var loaderContent:*;
+	}
+}

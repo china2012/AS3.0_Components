@@ -1,0 +1,14 @@
+package com.sloader
+{
+	public class SLoaderFile
+	{
+		public var title:String;
+		public var name:String;
+		public var url:String;
+		
+		////////////////////////////////////
+		public var loader:*;
+		public var currBytes:Number;
+		public var totalBytes:Number;
+	}
+}

@@ -1,0 +1,10 @@
+package com.sloader
+{
+	public class SLoaderFileType
+	{
+		public static const XML:String = "xml";
+		public function SLoaderFileType()
+		{
+		}
+	}
+}

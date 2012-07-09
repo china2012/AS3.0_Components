@@ -1,0 +1,12 @@
+package com.sloader.define
+{
+	import flash.system.ApplicationDomain;
+
+	public class SLoaderFileInfoVO extends Object
+	{
+		public var applicationDomain:ApplicationDomain;
+		public var loader:*;
+		public var doneBytes:int;
+		public var totalBytes:int;
+	}
+}

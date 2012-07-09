@@ -1,0 +1,15 @@
+package com.sloader
+{
+	public class SLoaderFiles
+	{
+		public var doneFileCount:int;
+		public var needFileCount:int;
+		
+		public var currBytes:int;
+		public var totalBytes:int;
+		
+		public function SLoaderFiles()
+		{
+		}
+	}
+}

@@ -1,0 +1,12 @@
+package com.sloader
+{
+	import flash.system.ApplicationDomain;
+
+	public class SFileLoaderInfo
+	{
+		public var applicationDomain:ApplicationDomain;
+		public var loaderContent:*;
+		public var doneBytes:int;
+		public var totalBytes:int;
+	}
+}

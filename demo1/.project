@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>demo1</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.adobe.flexbuilder.project.flexbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.adobe.flexbuilder.project.actionscriptnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>[source path] greensock-as3</name>
+			<type>2</type>
+			<locationURI>DOCUMENTS/Libraries/greensock-as3</locationURI>
+		</link>
+		<link>
+			<name>[source path] sectore-ThunderBoltAS3-a6d8c05</name>
+			<type>2</type>
+			<locationURI>DOCUMENTS/Libraries/sectore-ThunderBoltAS3-a6d8c05</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

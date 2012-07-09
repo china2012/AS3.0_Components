@@ -1,0 +1,266 @@
+package com.sloader
+{
+	import com.sloader.handlers.DAT_LoadHandler;
+	import com.sloader.handlers.LoadHandler;
+	import com.sloader.handlers.SWF_LoadHandler;
+	import com.sloader.handlers.XML_LoadHandler;
+	
+	import flash.system.ApplicationDomain;
+	import flash.system.SecurityDomain;
+	import flash.utils.Dictionary;
+	import com.sloader.vo.SLoaderFileErrorVO;
+	import com.sloader.vo.SLoaderFileVO;
+	import com.sloader.vo.SLoaderFilesInfoVO;
+	import com.sloader.define.SLoaderEventType;
+	import com.sloader.define.SLoaderFileType;
+
+	public class SLoader
+	{
+		private var _appDomain:ApplicationDomain;
+		
+		private var _loadHandlers:Array;
+		private var _eventHandlers:Dictionary;
+		private var _filesLoad:Array;
+		private var _files:Array;
+		
+		private var _filesLoadInfo:SLoaderFilesInfoVO;
+		private var _isLoading:Boolean = false;
+		
+		public function SLoader()
+		{
+			_eventHandlers = new Dictionary();
+			_loadHandlers = [];
+			_filesLoad = [];
+			_files = [];
+			_filesLoadInfo = new SLoaderFilesInfoVO();
+			
+			registerLoadHandler();
+			registerEventHandler();
+		}
+		
+		private function registerLoadHandler():void
+		{
+			_loadHandlers[SLoaderFileType.SWF.toLowerCase()] = SWF_LoadHandler;
+			_loadHandlers[SLoaderFileType.XML.toLowerCase()] = XML_LoadHandler;
+			_loadHandlers[SLoaderFileType.DAT.toLowerCase()] = DAT_LoadHandler;
+		}
+		
+		private function registerEventHandler():void
+		{
+			_eventHandlers[SLoaderEventType.FILE_COMPLETE] = [];
+			_eventHandlers[SLoaderEventType.FILE_ERROR] =  [];
+			_eventHandlers[SLoaderEventType.FILE_PROGRESS] = [];
+			_eventHandlers[SLoaderEventType.FILE_START] = [];
+			_eventHandlers[SLoaderEventType.FILES_COMPLETE] = [];
+			_eventHandlers[SLoaderEventType.FILES_PROGRESS] = [];
+			_eventHandlers[SLoaderEventType.FILES_START] = [];
+		}
+		
+		///////////////////////////////////////////////////////////////////////////
+		// loadListManage
+		///////////////////////////////////////////////////////////////////////////
+		public function addFile(fileVO:SLoaderFileVO):void
+		{
+			checkIsLoading();
+			checkFileVO(fileVO);
+			checkRepeatVO(fileVO);
+			
+			_filesLoad.push(fileVO);
+			_files.push(fileVO);
+		}
+		
+		public function addFiles(files:Array):void
+		{
+			checkIsLoading();
+			
+			for (var i:int=0; i<files.length; i++)
+			{
+				var fileVO:SLoaderFileVO = files[i];
+				checkFileVO(fileVO);
+				checkRepeatVO(fileVO);
+				
+				_filesLoad.push(fileVO);
+				_files.push(fileVO);
+			}
+		}
+		
+		public function removeFile(fileVO:SLoaderFileVO):void
+		{
+			checkIsLoading();
+			
+			var index:int = _filesLoad.indexOf(fileVO);
+			if (index != -1)
+				_filesLoad.splice(index, 1);
+			
+			index = _files.indexOf(fileVO);
+			if (index != -1)
+				_files.splice(index, 1);
+		}
+		
+		public function execute():void
+		{
+			checkIsLoading();
+			_execute();
+		}
+		
+		private function _execute():void
+		{
+			if (!(_filesLoad.length > 0))
+				return;
+			
+			var fileVO:SLoaderFileVO = _filesLoad[0];
+			var fileType:String = getFileType(fileVO).toLowerCase();
+			var fileLoadHandlerClass:Class = _loadHandlers[fileType];
+			if (!fileLoadHandlerClass)
+			{
+				throw new Error("you not registered handler on ["+fileType+"]");
+			}
+			else
+			{
+				_isLoading = true;
+				var fileLoadHandler:LoadHandler = new fileLoadHandlerClass(fileVO, _appDomain);
+				fileLoadHandler.setFileCompleteEventHandler(onFileComplete);
+				fileLoadHandler.setFileProgressEventHandler(onFileProgress);
+				fileLoadHandler.setFileStartEventHandler(onFileStart);
+				fileLoadHandler.setFileIoErrorEventHandler(onFileIoError);
+				fileLoadHandler.load();
+			}
+		}		
+		
+		///////////////////////////////////////////////////////////////////////////
+		// eventManage
+		///////////////////////////////////////////////////////////////////////////
+		public function addEventListener(type:String, handler:Function):void
+		{
+			if (!_eventHandlers[type])
+				throw new Error("event name["+type+"] is Invalid");
+			
+			_eventHandlers[type].push(handler);
+		}
+		
+		public function removeEventListener(type:String, handler:Function):void
+		{
+			if (!_eventHandlers[type])
+				return;
+			
+			var index:int = (_eventHandlers[type] as Array).indexOf(handler);
+			if (index != -1)
+				_eventHandlers[type].splice(index, 1);
+		}
+		
+		private function onFileStart(fileVO:SLoaderFileVO):void
+		{
+			executeHandlers(_eventHandlers[SLoaderEventType.FILE_START], fileVO);
+			if (_files.length == _filesLoad.length)
+				onFilesStart();
+		}
+		
+		private function onFileProgress(fileVO:SLoaderFileVO):void
+		{
+			executeHandlers(_eventHandlers[SLoaderEventType.FILE_PROGRESS], fileVO);
+			onFilesProgress();
+		}
+		
+		private function onFileComplete(fileVO:SLoaderFileVO):void
+		{
+			var index:int = _filesLoad.indexOf(fileVO);
+			if (index != -1)
+				_filesLoad.splice(index, 1);
+			
+			var hasfile:Boolean = _filesLoad.length > 0;
+			if (!hasfile)
+				_isLoading = false;
+			
+			executeHandlers(_eventHandlers[SLoaderEventType.FILE_COMPLETE], fileVO);
+			
+			if (hasfile)
+				_execute();
+			else
+				onFilesComplete();
+		}
+		
+		private function onFileIoError(error:SLoaderFileErrorVO):void
+		{
+			var index:int = _filesLoad.indexOf(error.file);
+			if (index != -1)
+				_filesLoad.splice(index, 1);
+			
+			var hasfile:Boolean = _filesLoad.length > 0;
+			if (!hasfile)
+				_isLoading = false;
+			
+			executeHandlers(_eventHandlers[SLoaderEventType.FILE_ERROR], error);
+			
+			if (hasfile)
+				_execute();
+			else
+				onFilesComplete();
+		}
+		
+		private function onFilesStart():void
+		{
+			executeHandlers(_eventHandlers[SLoaderEventType.FILES_START], _filesLoadInfo);
+		}
+		
+		private function onFilesProgress():void
+		{
+			executeHandlers(_eventHandlers[SLoaderEventType.FILES_PROGRESS], _filesLoadInfo);
+		}
+		
+		private function onFilesComplete():void
+		{
+			executeHandlers(_eventHandlers[SLoaderEventType.FILES_COMPLETE], _filesLoadInfo);
+		}
+		
+		private function executeHandlers(handlers:Array, file:*):void
+		{
+			for (var i:int=0; i<handlers.length; i++)
+			{
+				var handler:Function = handlers[i];
+				handler(file);
+			}
+		}
+		
+		///////////////////////////////////////////////////////////////////////////
+		//-------------------------------------------------------------------------
+		///////////////////////////////////////////////////////////////////////////
+		private function getFileType(file:SLoaderFileVO):String
+		{
+			if (file.type)
+			{
+				return file.type;
+			}
+			else
+			{
+				var extensions:Array = file.url.match(/[^\.][^\.]*/g);
+				if (extensions)
+				{
+					if (extensions.length > 0)
+						return extensions[extensions.length-1];
+				}
+			}
+			return "";
+		}
+		
+		private function checkIsLoading():void
+		{
+			if (_isLoading)
+				throw new Error("Refused the operation, is loaded in");
+		}
+		
+		private function checkFileVO(fileVO:SLoaderFileVO):void
+		{
+			if (!fileVO.title || !fileVO.name || !fileVO.url)
+				throw new Error("The fileVO parameter is incorrect");
+		}
+		
+		private function checkRepeatVO(fileVO:SLoaderFileVO):void
+		{
+			for (var i:int=0; i<_filesLoad.length; i++)
+			{
+				if ((_filesLoad[i] as SLoaderFileVO).title == fileVO.title)
+					throw new Error("Duplication of add file(title:"+fileVO.title+")");
+			}
+		}
+	}
+}
