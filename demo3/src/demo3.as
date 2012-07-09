@@ -2,15 +2,12 @@ package
 {
 	import com.sloader.SLoader;
 	import com.sloader.SLoaderEventType;
-	import com.sloader.SLoaderError;
 	import com.sloader.SLoaderFile;
 	import com.sloader.SLoaderInfo;
 	
 	import flash.display.Sprite;
 	import flash.net.URLLoader;
-	import flash.system.SecurityDomain;
 	import flash.text.TextField;
-	import flash.utils.setTimeout;
 	
 	public class demo3 extends Sprite
 	{
@@ -24,7 +21,7 @@ package
 			textField.y = 100;
 			addChild(textField);
 			
-			sloader = new SLoader();
+			sloader = new SLoader("shigongyu");
 			sloader.addEventListener(SLoaderEventType.SLOADER_COMPLETE, onConfigDataComplete);
 			
 			var fileVO:SLoaderFile = new SLoaderFile();
@@ -82,7 +79,8 @@ package
 		
 		private function onSloaderProgress(loadInfo:SLoaderInfo):void
 		{
-			textField.text = (loadInfo.currLoadedBytes/1024)+"kb";
+//			textField.text = (loadInfo.currLoadedBytes/1024)+"kb";
+			textField.text = (loadInfo.percentage)+"%";
 //			trace("Sloader累计加载("+loadInfo.currLoadedBytes+")");
 		}
 		

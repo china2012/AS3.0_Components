@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" minWidth="300" minHeight="200"
+				backgroundColor="#5E6FA1"
+				creationComplete="inits()">
+	<mx:Script>
+		<![CDATA[
+			public function inits():void
+			{
+				
+			}
+		]]>
+	</mx:Script>
+	<mx:Panel x="10" y="9" width="439" height="200" layout="absolute" title="current">
+	</mx:Panel>
+</mx:Application>
